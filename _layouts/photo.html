@@ -1,0 +1,51 @@
+---
+layout: compress
+---
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: "en-US" }}">
+  <head>
+    {% include bootstrap.html %}
+    {% include favicon.html %}
+    <title>{{ page.title }} - {{ site.title }}</title>
+  </head>
+  <body class="bg-secondary">
+    <section class="container mt-3">
+        {% assign image = site.data.photo_page[page.image] %}
+        <div class="row mb-3">
+            <div class="col text-center">
+                <a role="button" title="Overview" class="btn btn-secondary w-100" href="/{{ image.index_filename }}"><i class="bi-chevron-up"></i></a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <div class="position-relative">
+                    {% if image.prev %}
+                    <a role="button" title="Previous" class="btn btn-secondary opacity-50 h-100 position-absolute start-0 top-0" href="/{{ image.prev }}"><i class="position-absolute top-50 start-50 translate-middle bi-chevron-left"></i></a>
+                    {% endif %}
+
+                    <a href="/{{ page.image }}"><img src="/{{ image.medium }}" class="img-fluid"/></a>
+
+                    {% if image.next %}
+                    <a role="button" title="Next" class="btn btn-secondary opacity-50 h-100 position-absolute end-0 top-0" href="/{{ image.next }}"><i class="position-absolute top-50 start-50 translate-middle bi-chevron-right"></i></a>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <p class="col-6 text-start text-light fst-italic fw-light">
+                {{image.lens}} @ {{image.focal_length}}, {{ image.exposure }}, {{ image.aperture }}, {{ image.iso }}
+            </p>
+            {% if image.tags %}
+            <p class="col-6 text-end text-light fw-light">
+                {{ image.tags | join:", " }}
+            {% endif %}
+            </p>
+        </div>
+        <div class="row">
+            <div class="cell mt-3">
+                {% include copyright.html additional_classes="text-center" %}
+            </div>
+        </div>
+    </section>
+  </body>
+</html>

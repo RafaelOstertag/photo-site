@@ -1,0 +1,57 @@
+---
+layout: compress
+---
+{% assign index_data = site.data.index_map[page.index_key] %}
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: "en-US" }}">
+  <head>
+    {% include bootstrap.html %}
+    {% include favicon.html %}
+    <title>{{ index_data.display-date }} - {{ site.title }}</title>
+  </head>
+  <body class="bg-secondary">
+    <section class="container">
+        <div class="row  mt-4 mb-3 text-center">
+            <div class="col-md-1 h1">
+                {% if page.prev %}
+                <a role="button" class="btn btn-outline-light" title="Previous Month" href="{{ page.prev }}"><i class="bi-chevron-left"></i></a>
+                {% endif %}
+            </div>
+        
+            <h1 class="text-light col-md-10">
+                {{ index_data.display-date }}
+            </h1>
+
+            <div class="col-md-1 h1">
+                {% if page.next %}
+                <a role="button" class="btn btn-outline-light" title="Next Month" href="{{ page.next }}"><i class="bi-chevron-right"></i></a>
+                {% endif %}
+            </div>
+        </div>        
+        
+        {% for photo in index_data.photos %}
+        {% assign row = forloop.index0 | modulo:3 %}
+        {% if row == 0 %}
+        <div class="row align-items-center">
+        {% endif %}
+            <div class="col-md-4 text-center mb-3 position-relative">
+                <a href="{{ photo.page }}">
+                    <img class="rounded img-fluid" src="{{ photo.thumb }}">
+                </a>
+                {% if photo.latest %}
+                <span class="position-absolute top-100 start-50 translate-middle badge rounded-pill bg-secondary">latest</span>
+                {% endif %}
+            </div>
+        {% if row == 2 or forloop.last %}
+        </div>
+        {% endif %}
+            
+        {% endfor %}
+        <div class="row">
+            <div class="col mt-3">
+                {% include copyright.html additional_classes="text-center" %}
+            </div>
+        </div>
+    </section>
+  </body>
+</html>

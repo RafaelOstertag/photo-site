@@ -1,0 +1,11 @@
+url: "https://www.rafaelostertag.photo"
+baseurl: "" # the subpath of your site, e.g. /blog
+title: "Photos"
+
+include:
+  - _DSC*.jpg
+  - _DSC*.md
+
+plugins:
+  - jekyll-sitemap
+  - jekyll-last-modified-at

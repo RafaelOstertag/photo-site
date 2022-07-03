@@ -1,0 +1,27 @@
+version: 2.1
+
+orbs:
+  c: rafaelostertag/common-orb@1.19.0
+
+jobs:
+  trigger-rundeck:
+    executor: c/internal-infra
+    steps:
+      - run:
+          name: Trigger rundeck
+          command: |
+            curl -f -H "X-Rundeck-Auth-Token: ${RUNDECK_API_TOKEN}" \
+              -H 'Content-Type: application/json' \
+              -d "{ \"options\" : { \"commit\": \"${CIRCLE_SHA1}\" }}" \
+              -X POST https://colossus.kruemel.home/rundeck/api/18/job/ba6d4a7f-ef99-4f98-b467-cb65656b5a1c/executions
+
+workflows:
+  build-any-branch:
+    jobs:
+      - trigger-rundeck:
+          context:
+            - rundeck
+          filters:
+            branches:
+              only:
+                - main

@@ -1,0 +1,16 @@
+---
+layout: compress
+---
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: "en-US" }}">
+  <head>
+    {% include bootstrap.html %}
+    {% include favicon.html %}
+    <title>{{ page.title }} - {{ site.title }}</title>
+  </head>
+  <body class="bg-secondary">
+    <section class="container mt-3">
+      {{ content }}
+    </section>
+  </body>
+</html>
