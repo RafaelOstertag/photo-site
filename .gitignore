@@ -10,3 +10,5 @@ assets/images/*/mediums
 assets/images/*/thumbnails
 _data/*.yml
 robots.txt
+
+.DS_Store
