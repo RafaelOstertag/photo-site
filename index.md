@@ -1,6 +1,6 @@
 ---
 layout: photoindex
-index_key: '202207'
+index_key: '202208'
 
-prev: index-202206.html
+prev: index-202207.html
 ---
