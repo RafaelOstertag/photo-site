@@ -12,3 +12,5 @@ _data/*.yml
 robots.txt
 
 .DS_Store
+photos/**/*.md
+index*.md
