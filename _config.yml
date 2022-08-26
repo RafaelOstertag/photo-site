@@ -1,5 +1,5 @@
 url: "https://www.rafaelostertag.photo"
-baseurl: "" # the subpath of your site, e.g. /blog
+baseurl: "/" # the subpath of your site, e.g. /blog
 title: "Photos"
 
 include:

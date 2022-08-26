@@ -7,6 +7,8 @@ layout: compress
 <head>
     {% include bootstrap.html %}
     {% include favicon.html %}
+    {% include javascript.html %}
+    {% include sharethis.html %}
     <title>{{ page.title }} - {{ site.title }}</title>
 </head>
 
@@ -47,16 +49,13 @@ layout: compress
             </p>
             {% if image.tags %}
             <p class="col-6 text-end fw-light">
-                {{ image.tags | join:", " }}
-                {% endif %}
+            {{ image.tags | join:", " }}
             </p>
-        </div>
-        <div class="row">
-            <div class="cell mt-3">
-                {% include copyright.html additional_classes="text-center" %}
-            </div>
+            {% endif %}
         </div>
     </section>
+
+    {% include footer.html share="yes" %}
 </body>
 
 </html>

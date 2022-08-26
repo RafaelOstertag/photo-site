@@ -6,11 +6,18 @@ layout: compress
   <head>
     {% include bootstrap.html %}
     {% include favicon.html %}
+    {% include javascript.html %}
+    {% include sharethis.html %}
     <title>{{ page.title }} - {{ site.title }}</title>
   </head>
   <body>
+    {% include navbar.html %}
     <section class="container mt-3">
       {{ content }}
     </section>
+
+    {% if page.footer != "no" %}
+    {% include footer.html %}
+    {% endif %}
   </body>
 </html>

@@ -8,6 +8,8 @@ layout: compress
 <head>
     {% include bootstrap.html %}
     {% include favicon.html %}
+    {% include javascript.html %}
+    {% include sharethis.html %}
     <title>{{ index_data.display-date }} - {{ site.title }}</title>
 </head>
 
@@ -41,7 +43,7 @@ layout: compress
             {% endif %}
             <div class="col-md-4 text-center mb-3 position-relative">
                 <a href="{{ photo.page }}">
-                    <img class="rounded img-fluid border-secondary" src="{{ photo.thumb }}">
+                    <img class="rounded img-fluid border-secondary no-share" src="{{ photo.thumb }}">
                 </a>
                 {% if photo.latest %}
                 <span
@@ -68,12 +70,9 @@ layout: compress
                 {% endif %}
             </div>
         </div>
-        <div class="row">
-            <div class="col mt-3">
-                {% include copyright.html additional_classes="text-center" %}
-            </div>
-        </div>
     </section>
+
+    {% include footer.html %}
 </body>
 
 </html>
