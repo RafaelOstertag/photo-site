@@ -21,7 +21,7 @@ def _create_page_data_from_photo(photo: Photo) -> map:
     photo_page_data['iso'] = photo.iso
     photo_page_data['lens'] = photo.lens
     photo_page_data['tags'] = photo.tags
-    photo_page_data['medium'] = _photo_name_to_thumbnail(photo, 'mediums')
+    photo_page_data['medium'] = photo_name_to_thumbnail(photo, 'mediums')
     return photo_page_data
 
 
@@ -30,7 +30,7 @@ def _date_key_from_photo(photo: Photo) -> str:
 
 
 def _index_filename(current_date_key: str, latest_date_key) -> str:
-    return f'index.html' if current_date_key == latest_date_key else f"index-{current_date_key}.html"
+    return f'index.md' if current_date_key == latest_date_key else f"index-{current_date_key}.md"
 
 
 def _photo_list_to_data(photo_list: list) -> tuple:
@@ -46,10 +46,10 @@ def _photo_list_to_data(photo_list: list) -> tuple:
         photo_page_data = _create_page_data_from_photo(photo)
 
         if idx > 0:
-            photo_page_data['prev'] = _photo_name_to_html_page(
+            photo_page_data['prev'] = photo_name_to_html_page(
                 photo_list[idx-1])
         if idx < (len(photo_list)-1):
-            photo_page_data['next'] = _photo_name_to_html_page(
+            photo_page_data['next'] = photo_name_to_html_page(
                 photo_list[idx+1])
 
         photo_page_map[photo.path] = photo_page_data
@@ -64,14 +64,14 @@ def _photo_list_to_data(photo_list: list) -> tuple:
             'photos': []
         })
         index_for_date['photos'].append({
-            'page': _photo_name_to_html_page(photo),
-            'thumb': _photo_name_to_thumbnail(photo, 'thumbnails'),
+            'page': photo_name_to_html_page(photo),
+            'thumb': photo_name_to_thumbnail(photo, 'thumbnails'),
             'latest': photo.date_time.date() == latest_date
         })
         index_map[date_key] = index_for_date
 
-        index_data['page'] = _photo_name_to_html_page(photo)
-        index_data['thumb'] = _photo_name_to_thumbnail(photo, 'thumbnails')
+        index_data['page'] = photo_name_to_html_page(photo)
+        index_data['thumb'] = photo_name_to_thumbnail(photo, 'thumbnails')
         index_data['display-date'] = photo.date_time.strftime(r'%B %Y')
 
     return (index_map, photo_page_map)
@@ -84,9 +84,9 @@ def _find_images() -> list:
     return image_list
 
 
-def _photo_name_to_html_page(photo: Photo) -> str:
-    return os.path.join('photos', photo.path.removeprefix('assets/images/').removesuffix('.jpg') + '.html')
+def photo_name_to_html_page(photo: Photo) -> str:
+    return os.path.join('photos', photo.path.removeprefix('assets/images/').removesuffix('.jpg') + '.md')
 
 
-def _photo_name_to_thumbnail(photo: Photo, path: str) -> str:
+def photo_name_to_thumbnail(photo: Photo, path: str) -> str:
     return os.path.join(photo.dirname, path, photo.filename)

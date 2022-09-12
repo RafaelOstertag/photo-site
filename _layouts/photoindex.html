@@ -19,7 +19,7 @@ layout: compress
         <div class="row mt-4 mb-3 text-center">
             <div class="col-md-1 h1">
                 {% if page.prev %}
-                <a role="button" class="btn btn-outline-secondary" title="Previous Month" href="{{ page.prev }}"><i
+                <a role="button" class="btn btn-outline-secondary" title="Previous Month" href="{% link {{ page.prev }} %}"><i
                         class="bi-chevron-left"></i></a>
                 {% endif %}
             </div>
@@ -30,7 +30,7 @@ layout: compress
 
             <div class="col-md-1 h1">
                 {% if page.next %}
-                <a role="button" class="btn btn-outline-secondary" title="Next Month" href="{{ page.next }}"><i
+                <a role="button" class="btn btn-outline-secondary" title="Next Month" href="{% link {{ page.next }} %}"><i
                         class="bi-chevron-right"></i></a>
                 {% endif %}
             </div>
@@ -42,8 +42,8 @@ layout: compress
         <div class="row align-items-center">
             {% endif %}
             <div class="col-md-4 text-center mb-3 position-relative">
-                <a href="{{ photo.page }}">
-                    <img class="rounded img-fluid border-secondary no-share" src="{{ photo.thumb }}">
+                <a href="{% link {{ photo.page }} %}">
+                    <img class="rounded img-fluid border-secondary no-share" src="{% link {{ photo.thumb }} %}">
                 </a>
                 {% if photo.latest %}
                 <span
@@ -58,14 +58,14 @@ layout: compress
         <div class="row mt-4 mb-3 text-center">
             <div class="col-md-1 h1">
                 {% if page.prev %}
-                <a role="button" class="btn btn-outline-secondary" title="Previous Month" href="{{ page.prev }}"><i
+                <a role="button" class="btn btn-outline-secondary" title="Previous Month" href="{% link {{ page.prev }} %}"><i
                         class="bi-chevron-left"></i></a>
                 {% endif %}
             </div>
 
             <div class="col-md-1 offset-md-10 h1">
                 {% if page.next %}
-                <a role="button" class="btn btn-outline-secondary" title="Next Month" href="{{ page.next }}"><i
+                <a role="button" class="btn btn-outline-secondary" title="Next Month" href="{% link {{ page.next }} %}"><i
                         class="bi-chevron-right"></i></a>
                 {% endif %}
             </div>

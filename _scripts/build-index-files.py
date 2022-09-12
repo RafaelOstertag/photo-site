@@ -7,7 +7,7 @@ import yaml
 def _write_indices(index_map: dict):
     sorted_key_list = sorted(index_map, reverse=True)
     for idx, key in enumerate(sorted_key_list):
-        filename = index_map[key]['index_filename'].replace('.html', '.md')
+        filename = index_map[key]['index_filename']
         with open(filename, 'w', encoding='utf-8') as indexfile:
             indexfile.write(f"""---
 layout: photoindex
