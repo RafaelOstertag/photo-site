@@ -13,7 +13,7 @@ def read_photo_data() -> tuple:
     return _photo_list_to_data(_find_images())
 
 
-def _create_page_data_from_photo(photo: Photo) -> map:
+def create_page_data_from_photo(photo: Photo) -> map:
     photo_page_data = {}
     photo_page_data['focal_length'] = photo.focal_length
     photo_page_data['exposure'] = photo.exposure
@@ -43,14 +43,14 @@ def _photo_list_to_data(photo_list: list) -> tuple:
     latest_date = photo_list[0].date_time.date()
     for idx, photo in enumerate(photo_list):
         index_data = {}
-        photo_page_data = _create_page_data_from_photo(photo)
+        photo_page_data = create_page_data_from_photo(photo)
 
         if idx > 0:
             photo_page_data['prev'] = photo_name_to_html_page(
-                photo_list[idx-1])
+                photo_list[idx-1], 'photos')
         if idx < (len(photo_list)-1):
             photo_page_data['next'] = photo_name_to_html_page(
-                photo_list[idx+1])
+                photo_list[idx+1], 'photos')
 
         photo_page_map[photo.path] = photo_page_data
 
@@ -64,13 +64,13 @@ def _photo_list_to_data(photo_list: list) -> tuple:
             'photos': []
         })
         index_for_date['photos'].append({
-            'page': photo_name_to_html_page(photo),
+            'page': photo_name_to_html_page(photo, 'photos'),
             'thumb': photo_name_to_thumbnail(photo, 'thumbnails'),
             'latest': photo.date_time.date() == latest_date
         })
         index_map[date_key] = index_for_date
 
-        index_data['page'] = photo_name_to_html_page(photo)
+        index_data['page'] = photo_name_to_html_page(photo, 'photos')
         index_data['thumb'] = photo_name_to_thumbnail(photo, 'thumbnails')
         index_data['display-date'] = photo.date_time.strftime(r'%B %Y')
 
@@ -84,8 +84,8 @@ def _find_images() -> list:
     return image_list
 
 
-def photo_name_to_html_page(photo: Photo) -> str:
-    return os.path.join('photos', photo.path.removeprefix('assets/images/').removesuffix('.jpg') + '.md')
+def photo_name_to_html_page(photo: Photo, path: str) -> str:
+    return os.path.join(path, photo.path.removeprefix('assets/images/').removesuffix('.jpg') + '.md')
 
 
 def photo_name_to_thumbnail(photo: Photo, path: str) -> str:
