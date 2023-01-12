@@ -23,7 +23,7 @@ layout: compress
             </div>
         </div>
         <div class="row">
-            <div class="col">
+            <div class="col text-center">
                 <div class="position-relative">
                     {% if image.prev %}
                     <a role="button" title="Previous"
@@ -32,7 +32,7 @@ layout: compress
                             class="position-absolute top-50 start-50 translate-middle bi-chevron-left"></i></a>
                     {% endif %}
 
-                    <a href="{% link {{ page.image }} %}"><img src="{% link {{ image.medium }} %}" class="img-fluid" /></a>
+                    <a href="{% link {{ page.image }} %}"><img src="{% link {{ image.medium }} %}" class="rounded img-fluid" /></a>
 
                     {% if image.next %}
                     <a role="button" title="Next"
