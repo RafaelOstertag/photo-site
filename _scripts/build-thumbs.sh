@@ -20,14 +20,14 @@ do
         if [ "${image}" -nt "${thumbnail_filepath}" ]
         then
             echo "Generate thumbnail for ${image} -> ${thumbnail_filepath}"
-            convert -strip -resize '15%' "${image}" "${thumbnail_filepath}"
+            convert -strip -resize x300 "${image}" "${thumbnail_filepath}"
         else
             echo "Skipping thumbnail generation for ${image}"
         fi
         if [ "${image}" -nt "${medium_filepath}" ]
         then
             echo "Generate medium image for ${image} -> ${medium_filepath}"
-            convert -strip -resize '50%' "${image}" "${medium_filepath}"
+            convert -strip -resize x999 "${image}" "${medium_filepath}"
         else
             echo "Skipping medium image generation for ${image}"
         fi
