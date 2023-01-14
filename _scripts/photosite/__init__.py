@@ -1,5 +1,6 @@
 import os
 import glob
+import concurrent.futures
 
 from photosite.photo import Photo
 
@@ -78,8 +79,9 @@ def _photo_list_to_data(photo_list: list) -> tuple:
 
 
 def _find_images() -> list:
-    image_list = [Photo(x) for x in glob.glob(
-        'assets/images/*/*.jpg', root_dir='.')]
+    image_files = glob.glob('assets/images/*/*.jpg', root_dir='.')
+    with concurrent.futures.ThreadPoolExecutor(max_workers=4) as executor:
+        image_list = [x for x in executor.map(lambda x: Photo(x), image_files)]
     image_list.sort(key=lambda x: x.date_time, reverse=True)
     return image_list
 
