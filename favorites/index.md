@@ -1,4 +1,0 @@
----
-layout: favoritesindex
-title: Favorites
----
