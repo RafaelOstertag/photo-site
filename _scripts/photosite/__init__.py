@@ -43,6 +43,26 @@ def gallery_data(file_list: list) -> list:
             } for photo in photo_list]
 
 
+def gallery_data_with_tags(s: str) -> list:
+    all_photos = _find_all_photos()
+    return [
+        {
+            'thumb': _photo_name_to_thumbnail(photo, 'thumbnails'),
+            'image': photo.path,
+            'image-info': _create_page_data_from_photo(photo)
+        }
+        for photo in all_photos
+        if _contains(photo.tags, s)
+    ]
+
+
+def _contains(lst: list, s: str) -> bool:
+    for i in lst:
+        if s.casefold() in i.casefold():
+            return True
+    return False
+
+
 def _create_page_data_from_photo(photo: Photo) -> map:
     photo_page_data = {}
     photo_page_data['focal_length'] = photo.focal_length
