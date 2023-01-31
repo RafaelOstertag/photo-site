@@ -13,3 +13,4 @@ PyYAML==6.0
 toml==0.10.2
 tomli==2.0.1
 wrapt==1.14.1
+apsw==3.40.1.0

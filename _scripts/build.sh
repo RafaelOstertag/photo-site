@@ -5,6 +5,7 @@ set -eu
 path=$(dirname $0)
 
 "${path}"/build-thumbs.sh
+"${path}"/maintain-image-db.py
 "${path}"/build-monthly-galleries-data.py
 "${path}"/build-favorites-data.py
 "${path}"/build-tag-data.py animals
