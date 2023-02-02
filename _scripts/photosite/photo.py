@@ -80,7 +80,7 @@ class ExifPhotoInformation:
             tag_list = [tag_list]
 
         return [
-            tag.replace("|", " :: ") for tag in tag_list if not tag.startswith("export")
+            tag.replace("|", " :: ").strip() for tag in tag_list if not tag.startswith("export")
         ]
 
     @property
