@@ -66,6 +66,24 @@ class ExifPhotoInformation:
         return self._exif_data["Lens"]
 
     @property
+    def body_serial(self) -> str:
+        serial = (
+            self._exif_data["SerialNumber"]
+            if "SerialNumber" in self._exif_data
+            else None
+        )
+        return serial.strip() if serial else None
+
+    @property
+    def lens_serial(self) -> str:
+        serial = (
+            self._exif_data["LensSerialNumber"]
+            if "LensSerialNumber" in self._exif_data
+            else None
+        )
+        return serial.strip() if serial else None
+
+    @property
     def tags(self) -> list:
         """Return hierarchical tags. If no tags exists, an
         empty list is returned.
@@ -80,7 +98,9 @@ class ExifPhotoInformation:
             tag_list = [tag_list]
 
         return [
-            tag.replace("|", " :: ").strip() for tag in tag_list if not tag.startswith("export")
+            tag.replace("|", " :: ").strip()
+            for tag in tag_list
+            if not tag.startswith("export")
         ]
 
     @property

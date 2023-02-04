@@ -43,13 +43,22 @@ class ImageDatabase:
                 return False
             return True
 
+    def require_reindex(self, filename: str) -> bool:
+        with self._db_connection:
+            rows = self._db_connection.execute(
+                "select reindex from photo where image_path = ?1", (filename,)
+            ).fetchall()
+            if len(rows) == 0 or rows[0][0] != 0:
+                return True
+            return False
+
     def add_or_update(self, photo: photosite.ExifPhotoInformation, mtime: int):
         if not self.exists(photo.path):
             with self._db_connection:
                 self._db_connection.execute(
                     """insert into photo 
-                (image_path, image_modified, created, aperture, exposure, iso, lens, focal_length, tags) VALUES
-                (?1, ?2, ?3, ?4, ?5, ?6, ?7, ?8, ?9)""",
+                (image_path, image_modified, created, aperture, exposure, iso, lens, focal_length, tags, body_serial, lens_serial, reindex) VALUES
+                (?1, ?2, ?3, ?4, ?5, ?6, ?7, ?8, ?9, ?10, ?11, 0)""",
                     (
                         photo.path,
                         mtime,
@@ -60,13 +69,25 @@ class ImageDatabase:
                         photo.lens,
                         photo.focal_length,
                         "\n".join(photo.tags) if len(photo.tags) > 0 else "",
+                        photo.body_serial,
+                        photo.lens_serial,
                     ),
                 )
         else:
             with self._db_connection:
                 self._db_connection.execute(
                     """update photo
-                set image_modified = ?2, created = ?3, aperture = ?4, exposure = ?5, iso = ?6, lens = ?7, focal_length = ?8, tags = ?9
+                set image_modified = ?2, 
+                    created = ?3, 
+                    aperture = ?4, 
+                    exposure = ?5, 
+                    iso = ?6, 
+                    lens = ?7, 
+                    focal_length = ?8, 
+                    tags = ?9,
+                    body_serial = ?10,
+                    lens_serial = ?11,
+                    reindex = 0
                 where image_path = ?1""",
                     (
                         photo.path,
@@ -78,6 +99,8 @@ class ImageDatabase:
                         photo.lens,
                         photo.focal_length,
                         "\n".join(photo.tags) if len(photo.tags) > 0 else "",
+                        photo.body_serial,
+                        photo.lens_serial,
                     ),
                 )
 
@@ -144,6 +167,20 @@ class ImageDatabase:
         self._db_connection.rowtrace = None
         return photos
 
+    def photos_with_body_serial(self) -> list:
+        query = (
+            'select image_path from photo where body_serial <> "" order by image_path'
+        )
+        with self._db_connection:
+            return [row[0] for row in self._db_connection.execute(query)]
+
+    def photos_with_lens_serial(self) -> list:
+        query = (
+            'select image_path from photo where lens_serial <> "" order by image_path'
+        )
+        with self._db_connection:
+            return [row[0] for row in self._db_connection.execute(query)]
+
     def _row_to_dict(row):
         return {
             "id": row.id,
@@ -154,6 +191,8 @@ class ImageDatabase:
             "iso": row.iso,
             "lens": row.lens,
             "focal_length": row.focal_length,
+            "body_serial": row.body_serial,
+            "lens_serial": row.lens_serial,
             "tags": row.tags.split("\n") if row.tags != "" else [],
         }
 
@@ -167,7 +206,9 @@ def update_database(file_name: str = image_database):
         image_paths = glob.glob("assets/images/*/*.jpg", root_dir=".")
         for image_path in image_paths:
             mtime = os.path.getmtime(image_path)
-            if not img_db.exists(image_path, mtime):
+            if (not img_db.exists(image_path, mtime)) or img_db.require_reindex(
+                image_path
+            ):
                 jobs.append(executor.submit(_read_photo, image_path, mtime))
 
         logging.info("Jobs: %d", len(jobs))
@@ -182,7 +223,7 @@ def update_database(file_name: str = image_database):
             path for path in photo_paths_in_db if not os.path.exists(path)
         ]
         for non_existing_path in non_existing_paths:
-            logging(f"Remove %s from database", non_existing_path)
+            logging.info(f"Remove %s from database", non_existing_path)
             img_db.remove(non_existing_path)
         logging.info("Done updating database")
 

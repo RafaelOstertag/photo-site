@@ -23,7 +23,26 @@ def _version0(db):
         """
         )
 
+def _version1(db):
+    with db:
+        db.execute(
+            """
+        ALTER TABLE photo ADD body_serial VARCHAR(32);
+        ALTER TABLE photo ADD lens_serial VARCHAR(32);
+        ALTER TABLE photo ADD reindex INTEGER NOT NULL DEFAULT 0;
+
+        UPDATE photo SET reindex = 1;
+
+        CREATE INDEX body_serial_idx ON photo (body_serial);
+        CREATE INDEX lens_serial_idx ON photo (lens_serial);
+        
+        PRAGMA user_version=2;
+        """
+        )
+
 
 def _ensure_schema(db):
     if _user_version(db) == 0:
         _version0(db)
+    if _user_version(db) == 1:
+        _version1(db)
