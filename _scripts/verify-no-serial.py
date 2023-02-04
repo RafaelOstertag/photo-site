@@ -1,4 +1,9 @@
 #!/usr/bin/env python3
+#
+# Verifies that no photos contain serial numbers of the camera body or lens.
+#
+# It will exit with a return code of 1, if it finds serial numbers.
+
 
 import logging
 import sys
@@ -24,4 +29,12 @@ if __name__ == "__main__":
         print("Photos with lens serial")
         [print(i) for i in lens_serials]
 
-    sys.exit(1) if fail else sys.exit(0)
+    if fail:
+        print("""
+        ##
+        ## Photos found with embedded serial numbers
+        ##
+        """)
+        sys.exit(1)
+    else:
+        print("No photos with serial numbers found. Good.")
