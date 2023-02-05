@@ -25,6 +25,8 @@ do
     year_month=$(concat_year_and_month "${create_date}")
     target_dir="${IMAGE_BASE}/${year_month}"
 
-    cp -iv "${photo}" "${target_dir}"
+    mkdir -p "${target_dir}/"
+
+    cp -iv "${photo}" "${target_dir}/"
 done
 
