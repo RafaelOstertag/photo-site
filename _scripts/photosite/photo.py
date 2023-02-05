@@ -72,7 +72,7 @@ class ExifPhotoInformation:
             if "SerialNumber" in self._exif_data
             else None
         )
-        return serial.strip() if serial else None
+        return str(serial).strip() if serial else None
 
     @property
     def lens_serial(self) -> str:
@@ -81,7 +81,7 @@ class ExifPhotoInformation:
             if "LensSerialNumber" in self._exif_data
             else None
         )
-        return serial.strip() if serial else None
+        return str(serial).strip() if serial else None
 
     @property
     def tags(self) -> list:
