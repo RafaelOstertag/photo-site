@@ -30,6 +30,11 @@ do
         mkdir -p "${target_dir}"
     fi
 
+    exiftool -overwrite_original -SerialNumber="x" -LensSerialNumber="x" "${photo}"
+
     mv -iv "${photo}" "${target_dir}/"
 done
 
+
+ "$(dirname $0)"/maintain-image-db.py
+ "$(dirname $0)"/verify-no-serial.py
