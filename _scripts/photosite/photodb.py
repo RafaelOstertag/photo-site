@@ -169,14 +169,14 @@ class ImageDatabase:
 
     def photos_with_body_serial(self) -> list:
         query = (
-            'select image_path from photo where body_serial <> "" order by image_path'
+            "select image_path from photo where body_serial not in ('','x') order by image_path"
         )
         with self._db_connection:
             return [row[0] for row in self._db_connection.execute(query)]
 
     def photos_with_lens_serial(self) -> list:
         query = (
-            'select image_path from photo where lens_serial <> "" order by image_path'
+            "select image_path from photo where lens_serial not in ('','x') order by image_path"
         )
         with self._db_connection:
             return [row[0] for row in self._db_connection.execute(query)]
