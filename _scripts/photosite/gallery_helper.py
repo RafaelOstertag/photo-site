@@ -15,5 +15,4 @@ def _create_page_data_from_photo(photo: dict) -> dict:
     photo_page_data["iso"] = photo["iso"]
     photo_page_data["lens"] = photo["lens"]
     photo_page_data["tags"] = photo["tags"]
-    photo_page_data["medium"] = _photo_name_to_thumbnail(photo, "mediums")
     return photo_page_data

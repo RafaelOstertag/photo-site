@@ -1,7 +1,7 @@
 jQuery("#lightgallery")
     .justifiedGallery({
         captions: false,
-        lastRow: "hide",
+        lastRow: "center",
         rowHeight: 180,
         margins: 5
     })
