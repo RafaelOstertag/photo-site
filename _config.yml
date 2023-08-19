@@ -5,6 +5,7 @@ title: "Photos"
 include:
   - _DSC*.jpg
   - _DSC*.md
+  - _D85*.jpg
 
 plugins:
   - jekyll-sitemap
