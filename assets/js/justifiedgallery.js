@@ -12,12 +12,12 @@ jQuery("#lightgallery")
                 autoplayFirstVideo: false,
                 pager: false,
                 galleryId: "nature",
-                plugins: [lgThumbnail],
+                plugins: [lgThumbnail,lgFullscreen,lgZoom],
                 mobileSettings: {
                     controls: false,
                     showCloseIcon: false,
-                    download: false,
-                    rotate: false
+                    download: true,
+                    rotate: true
                 }
             }
         );
