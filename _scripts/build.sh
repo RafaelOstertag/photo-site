@@ -1,6 +1,7 @@
 #!/bin/sh
 
 set -eu
+RD_OPTION_REBUILD=${RD_OPTION_REBUILD:-NO}
 
 path=$(dirname $0)
 
@@ -15,5 +16,9 @@ path=$(dirname $0)
 "${path}"/build-tag-data.py "Creux du Van" --suffix=cdv
 "${path}"/build-monthly-galleries.py
 
-jekyll clean
-jekyll build
+if [ "$RD_OPTION_REBUILD" == "YES" ]; then
+    jekyll clean
+    jekyll build
+else
+    jekyll build --incremental
+fi
