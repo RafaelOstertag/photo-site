@@ -16,7 +16,7 @@ path=$(dirname $0)
 "${path}"/build-tag-data.py "Creux du Van" --suffix=cdv
 "${path}"/build-monthly-galleries.py
 
-if [ "$RD_OPTION_REBUILD" == "YES" ]; then
+if [ "${RD_OPTION_REBUILD}" = "YES" ]; then
     jekyll clean
     jekyll build
 else
