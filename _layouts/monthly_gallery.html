@@ -9,6 +9,7 @@ layout: compress
   {% include bootstrap.html %}
   {% include favicon.html %}
   {% include javascript.html %}
+  {% include justifiedgallery.html %}
   {% include lightgallery.html %}
   <title>{{ page.title }} - {{ site.title }}</title>
 </head>
@@ -24,21 +25,24 @@ layout: compress
       </div>
       <div class="col col-md-2 justify-content-end text-end align-self-center">
         <div class="dropdown">
-            <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">Month
-            </button>
-            <ul class="dropdown-menu">
-              {% for monthly_gallery in site.data.monthly_galleries_list %}
-              <li><a class="dropdown-item" href="{% link {{monthly_gallery.index_filename}} %}">{{ monthly_gallery.display-date }}</a></li>
-              {% endfor %}
-            </ul>
-          </div>
+          <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
+            aria-expanded="false">Month
+          </button>
+          <ul class="dropdown-menu">
+            {% for monthly_gallery in site.data.monthly_galleries_list %}
+            <li><a class="dropdown-item" href="{% link monthly/{{monthly_gallery.index_filename}} %}">{{
+                monthly_gallery.display-date }}</a></li>
+            {% endfor %}
+          </ul>
+        </div>
       </div>
     </header>
     <div class="row justify-content-center">
       <div class="col col-md-12">
         <div id="lightgallery">
           {% for photo in month_data.photos %}
-          <a href="{% link {{ photo.image }} %}" data-sub-html="<p class='text-secondary fst-italic fw-light'>{{photo.image-info.lens}} @ {{photo.image-info.focal_length}}, {{ photo.image-info.exposure }}, {{ photo.image-info.aperture }}, {{ photo.image-info.iso }}</p>">
+          <a href="{% link {{ photo.image }} %}"
+            data-sub-html="<p class='text-secondary fst-italic fw-light'>{{photo.image-info.lens}} @ {{photo.image-info.focal_length}}, {{ photo.image-info.exposure }}, {{ photo.image-info.aperture }}, {{ photo.image-info.iso }}</p>">
             <img class="img-fluid rounded" src="{% link {{ photo.thumb }} %}" />
           </a>
           {% endfor %}
@@ -52,6 +56,6 @@ layout: compress
 {% include footer.html %}
 {% endif %}
 {% include bootstrap_js.html %}
-{% include lightgallery_js.html %}
+{% include justifiedgallery_js.html %}
 
 </html>

@@ -1,0 +1,22 @@
+.lead-img {
+    height: 300px;
+    width: 100%;
+    object-fit: cover;
+    padding-left: 1.5rem;
+    padding-top: 3rem;
+}
+
+h1.w-bg {
+    height: 150px;
+    background-position: left;
+    padding-left: 1.5rem;
+    line-height: 150px;
+}
+
+section.container+h1.w-bg {
+    margin-top: 5rem;
+}
+
+section.lead-img+h1.w-bg {
+    margin-top: 0;
+}

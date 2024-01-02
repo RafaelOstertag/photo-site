@@ -1,5 +1,7 @@
 #!/usr/bin/env python3
 
+import os.path
+
 import yaml
 
 
@@ -7,7 +9,7 @@ def _write_indices(monthly_gallery_map: dict):
     sorted_key_list = sorted(monthly_gallery_map, reverse=True)
     for key in sorted_key_list:
         filename = monthly_gallery_map[key]["index_filename"]
-        with open(filename, "w", encoding="utf-8") as indexfile:
+        with open(os.path.join("monthly",filename), "w", encoding="utf-8") as indexfile:
             indexfile.write(
                 f"""---
 layout: monthly_gallery

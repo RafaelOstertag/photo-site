@@ -1,17 +1,17 @@
-jQuery("#lightgallery")
+jQuery(".homeGallery")
     .justifiedGallery({
-        captions: false,
+        captions: true,
         lastRow: "center",
-        rowHeight: 180,
-        margins: 5
+        rowHeight: 300,
+        margins: 25
     })
-    .on("jg.complete", function () {
+    .on("jg.complete", function (evt) {
         window.lightGallery(
-            document.getElementById("lightgallery"),
+            evt.target,
             {
                 autoplayFirstVideo: false,
                 pager: false,
-                galleryId: "light-gallery",
+                galleryId: "light-gallery-" + (Math.floor(Math.random() * 100)),
                 plugins: [lgThumbnail, lgFullscreen, lgZoom],
                 mobileSettings: {
                     controls: false,

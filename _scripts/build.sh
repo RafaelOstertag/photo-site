@@ -11,9 +11,7 @@ path=$(dirname $0)
 "${path}"/verify-no-serial.py
 
 "${path}"/build-monthly-galleries-data.py
-"${path}"/build-favorites-data.py
 "${path}"/build-tag-data.py "Black & White" --suffix=bw
-"${path}"/build-tag-data.py "Creux du Van" --suffix=cdv
 "${path}"/build-monthly-galleries.py
 
 if [ "${RD_OPTION_REBUILD}" = "YES" ]; then

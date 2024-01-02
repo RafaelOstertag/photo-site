@@ -1,0 +1,27 @@
+---
+layout: compress
+---
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: " en-US" }}">
+
+<head>
+  {% include bootstrap.html %}
+  {% include style.html %}
+  {% include favicon.html %}
+  {% include justifiedgallery.html %}
+  {% include lightgallery.html %}
+  {% include javascript.html %}
+  <title>{{ page.title }} - {{ site.title }}</title>
+</head>
+
+<body>
+  {{ content }}
+
+  {% if page.footer != "no" %}
+  {% include footer.html %}
+  {% endif %}
+  {% include bootstrap_js.html %}
+  {% include homegallery.html %}
+</body>
+
+</html>

@@ -1,0 +1,93 @@
+- title: Architecture
+  bg_image: assets/images/202312/_D857542.jpg
+  items:
+    - lead: Tall and Small
+      src: assets/images/202312/_D857611e.jpg
+    - lead: Reflection
+      src: assets/images/202312/_D857580.jpg
+    - lead: Look Up
+      src: assets/images/202310/_NZ97234.jpg
+    - lead: Corner
+      src: assets/images/202311/_D853807.jpg
+
+- title: Close Up
+  bg_image: assets/images/202205/DSC_0535.jpg
+  items:
+    - lead: Autumn Drop
+      src: assets/images/202311/_NZ90672.jpg
+    - lead: Beads
+      src: assets/images/202310/_NZ94614s.jpg
+    - lead: Fragile Eyes
+      src: assets/images/202307/_DSC4860e.jpg
+    - lead: Impaired Vision
+      src: assets/images/202304/_DSC5267ee.jpg
+
+- title: Artistic
+  bg_image: assets/images/202312/_D854674.jpg
+  items:
+    - lead: Yellow
+      src: assets/images/202312/_D857588e.jpg
+    - lead: Serious
+      src: assets/images/202312/_D857602.jpg
+    - lead: Shadow
+      src: assets/images/202309/_D857861e.jpg
+    - lead: Artifical Know
+      src: assets/images/202309/_NZ95503e.jpg
+    - lead: Almost Twins
+      src: assets/images/202309/_D858003.jpg
+    
+
+- title: City
+  bg_image: assets/images/202312/_NZ90034.jpg
+  items:
+    - lead: Corner Place
+      src: assets/images/202312/_NZ90048e.jpg
+    - lead: Chimneys
+      src: assets/images/202312/_NZ90051e.jpg
+    - lead: Chainlink
+      src: assets/images/202312/_D857419.jpg
+
+- title: Fine Art
+  bg_image: assets/images/202311/_D854105.jpg
+  items:
+    - lead: Simple
+      src: assets/images/202312/_NZ92999.jpg
+    - lead: Ducklings
+      src: assets/images/202312/_NZ90040e.jpg
+    - lead: Cozy Outside
+      src: assets/images/202312/_NZ90043e.jpg
+    - lead: No Pictures
+      src: assets/images/202312/_D857409.jpg
+    - lead: Reaching
+      src: assets/images/202312/_NZ93087.jpg
+
+- title: Landscape
+  bg_image: assets/images/202301/_DSC4733.jpg
+  items:
+    - lead: Simply Winter
+      src: assets/images/202312/_NZ91196e.jpg
+    - lead: Soft Sunrise
+      src: assets/images/202312/_NZ91091e.jpg
+    - lead: Two of a Kind
+      src: assets/images/202311/_NZ97454.jpg
+    - lead: Alps
+      src: assets/images/202309/_NZ94858e.jpg
+    - lead: Alpine Lake
+      src: assets/images/202309/_NZ94726e.jpg
+    - lead: Alpine Lake
+      src: assets/images/202309/_NZ94774-HDR.jpg
+
+- title: Wildlife
+  bg_image: assets/images/202308/_DSC3362e.jpg
+  items:
+    - lead: Flip
+      src: assets/images/202312/_NZ94264e.jpg
+    - lead: Pierced
+      src: assets/images/202312/_NZ94248e.jpg
+    - lead: Brawl
+      src: assets/images/202312/_NZ92314.jpg
+    - lead: Dreamy Lemmur
+      src: assets/images/202308/_DSC2609ee.jpg
+    - lead: Cuddling
+      src: assets/images/202307/_DSC9484ee.jpg
+    
