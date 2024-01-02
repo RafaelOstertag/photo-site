@@ -6,7 +6,7 @@ footer: "yes"
 
 <div class="position-relative">
     <img style="z-index: 0;" class="position-sticky top-0 start-0 img-fluid"
-        src="{% link assets/images/202310/_NZ97226e.jpg %}" />
+        src="{% link assets/backgrounds/title.jpg %}" />
 
     <div style="z-index: 1;" class="position-absolute display-1 top-50 start-0 text-light translate-middle-y">Rafael
         Ostertag</div>
@@ -17,7 +17,7 @@ footer: "yes"
 
 {%- if forloop.index == 3 -%}
 <section class="text-light lead-img"
-    style='background: linear-gradient(rgba(0, 0, 0, 0.2),rgba(0, 0, 0, 0.2)),url("{% link assets/images/202311/_D853756.jpg %}");'>
+    style='background: linear-gradient(rgba(0, 0, 0, 0.2),rgba(0, 0, 0, 0.2)),url("{% link assets/backgrounds/monthly.jpg %}");'>
     <h1>Monthly</h1>
     <p class="fs-2 pt-3 ps-5">
         Visit the monthly galleries <a href="{% link monthly/index.md %}">
@@ -29,7 +29,7 @@ footer: "yes"
 
 {%- if forloop.index == 6 -%}
 <section class="text-light lead-img"
-    style='background: linear-gradient(rgba(0, 0, 0, 0.2),rgba(0, 0, 0, 0.2)),url("{% link assets/images/202302/_DSC6268.jpg %}");'>
+    style='background: linear-gradient(rgba(0, 0, 0, 0.2),rgba(0, 0, 0, 0.2)),url("{% link assets/backgrounds/blackwhite.jpg %}");'>
     <h1>Black & White</h1>
     <p class="fs-2 pt-3 ps-5">
         Visit the black & white gallery <a href="{% link black_and_white.md %}">
@@ -43,7 +43,7 @@ footer: "yes"
 </h1>
 <section class="container homeGallery">
     {% for item in category.items %}
-    <a href="{% link {{item.src}} %}"><img class="rounded" alt="{{item.lead}}" src="{% link {{item.src}} %}" /></a>
+    <a href="{% link {{item.src}} %}"><img class="rounded" alt="{{item.lead}}" src="{% link {{item.thumb}} %}" /></a>
     {% endfor %}
 </section>
 {% endfor %}

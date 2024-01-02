@@ -6,7 +6,6 @@ include:
   - _DSC*.jpg
   - _D85*.jpg
   - _NZ9*.jpg
-  - monthly/*.md
 
 plugins:
   - jekyll-sitemap
