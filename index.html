@@ -44,7 +44,12 @@ footer: "no"
 </h1>
 <section class="container homeGallery">
     {% for item in category.items %}
-    <a href="{% link {{item.src}} %}"><img class="rounded" alt="{{item.lead}}" src="{% link {{item.thumb}} %}" /></a>
+    {% assign components = item.src | split: "/" %}
+    {% assign filename = components | last %}
+    {% assign path = item.src | replace_first: filename, "thumbnails" %}
+    {% assign thumbnail = path | append: "/" | append: filename %}
+
+    <a href="{% link {{item.src}} %}"><img class="rounded" alt="{{item.lead}}" src="{% link {{thumbnail}} %}" /></a>
     {% endfor %}
 </section>
 {% endfor %}
