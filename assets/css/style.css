@@ -17,10 +17,10 @@ h1.w-bg {
     line-height: 150px;
 }
 
-section.container+h1.w-bg {
+div.container+h1.w-bg {
     margin-top: 5rem;
 }
 
-section.lead-img+h1.w-bg {
+div.lead-img+h1.w-bg {
     margin-top: 0;
 }

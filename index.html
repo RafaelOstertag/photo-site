@@ -17,7 +17,7 @@ footer: "no"
 {% for category in site.data.home_items %}
 
 {%- if forloop.index == 3 -%}
-<section class="text-light lead-img"
+<div class="text-light lead-img"
     style='background: linear-gradient(rgba(0, 0, 0, 0.2),rgba(0, 0, 0, 0.2)),url("{% link assets/backgrounds/monthly.jpg %}");'>
     <h1>Monthly</h1>
     <p class="fs-2 pt-3 ps-5">
@@ -25,11 +25,11 @@ footer: "no"
             <span class="carousel-control-next-icon"></span>
         </a>
     </p>
-</section>
+</div>
 {%- endif -%}
 
 {%- if forloop.index == 6 -%}
-<section class="text-light lead-img"
+<div class="text-light lead-img"
     style='background: linear-gradient(rgba(0, 0, 0, 0.2),rgba(0, 0, 0, 0.2)),url("{% link assets/backgrounds/blackwhite.jpg %}");'>
     <h1>Black & White</h1>
     <p class="fs-2 pt-3 ps-5">
@@ -37,12 +37,12 @@ footer: "no"
             <span class="carousel-control-next-icon"></span>
         </a>
     </p>
-</section>
+</div>
 {%- endif -%}
 
 <h1 class="w-bg text-light" style='background-image: url("{% link {{category.bg_image}} %}");'>{{category.title}}
 </h1>
-<section class="container homeGallery">
+<div class="container homeGallery">
     {% for item in category.items %}
     {% assign components = item.src | split: "/" %}
     {% assign filename = components | last %}
@@ -51,10 +51,10 @@ footer: "no"
 
     <a href="{% link {{item.src}} %}"><img class="rounded" alt="{{item.lead}}" src="{% link {{thumbnail}} %}" /></a>
     {% endfor %}
-</section>
+</div>
 {% endfor %}
 
-<section class="container-fluid pt-5 pb-5 ps-5 pe-5 bg-dark text-light mt-5">
+<div class="container-fluid pt-5 pb-5 ps-5 pe-5 bg-dark text-light mt-5">
     <div class="row align-items-end">
         <div class="col-md-6">
             <ul class="list-unstyled mb-0 pb-0">
@@ -77,4 +77,4 @@ footer: "no"
                 License</a>
         </div>
     </div>
-</section>
+</div>
