@@ -1,71 +1,9 @@
-- title: Architecture
-  bg_image: assets/backgrounds/architecture.jpg
-  items:
-    - lead: Tall and Small
-      src: assets/images/202312/_D857611e.jpg
-      thumb: assets/images/202312/thumbnails/_D857611e.jpg
-    - lead: Reflection
-      src: assets/images/202312/_D857580.jpg
-      thumb: assets/images/202312/thumbnails/_D857580.jpg
-    - lead: Look Up
-      src: assets/images/202310/_NZ97234.jpg
-      thumb: assets/images/202310/thumbnails/_NZ97234.jpg
-    - lead: Corner
-      src: assets/images/202311/_D853807.jpg
-      thumb: assets/images/202311/thumbnails/_D853807.jpg
-
-- title: Close Up
-  bg_image: assets/backgrounds/closeup.jpg
-  items:
-    - lead: Autumn Drop
-      src: assets/images/202311/_NZ90672.jpg
-      thumb: assets/images/202311/thumbnails/_NZ90672.jpg
-    - lead: Beads
-      src: assets/images/202310/_NZ94614s.jpg
-      thumb: assets/images/202310/thumbnails/_NZ94614s.jpg
-    - lead: Fragile Eyes
-      src: assets/images/202307/_DSC4860e.jpg
-      thumb: assets/images/202307/thumbnails/_DSC4860e.jpg
-    - lead: Impaired Vision
-      src: assets/images/202304/_DSC5267ee.jpg
-      thumb: assets/images/202304/thumbnails/_DSC5267ee.jpg
-
-- title: Artistic
-  bg_image: assets/backgrounds/artistic.jpg
-  items:
-    - lead: Yellow
-      src: assets/images/202312/_D857588e.jpg
-      thumb: assets/images/202312/thumbnails/_D857588e.jpg
-    - lead: Serious
-      src: assets/images/202312/_D857602.jpg
-      thumb: assets/images/202312/thumbnails/_D857602.jpg
-    - lead: Shadow
-      src: assets/images/202309/_D857861e.jpg
-      thumb: assets/images/202309/thumbnails/_D857861e.jpg
-    - lead: Artifical Know
-      src: assets/images/202309/_NZ95503e.jpg
-      thumb: assets/images/202309/thumbnails/_NZ95503e.jpg
-    - lead: Almost Twins
-      src: assets/images/202309/_D858003.jpg
-      thumb: assets/images/202309/thumbnails/_D858003.jpg
-    
-
-- title: City
-  bg_image: assets/backgrounds/city.jpg
-  items:
-    - lead: Corner Place
-      src: assets/images/202312/_NZ90048e.jpg
-      thumb: assets/images/202312/thumbnails/_NZ90048e.jpg
-    - lead: Chimneys
-      src: assets/images/202312/_NZ90051e.jpg
-      thumb: assets/images/202312/thumbnails/_NZ90051e.jpg
-    - lead: Chainlink
-      src: assets/images/202312/_D857419.jpg
-      thumb: assets/images/202312/thumbnails/_D857419.jpg      
-
 - title: Fine Art
   bg_image: assets/backgrounds/fineart.jpg
   items:
+    - lead: Reclining
+      src: assets/images/202312/_NZ90016e.jpg
+      thumb: assets/images/202312/thumbnails/_NZ90016e.jpg
     - lead: Simple
       src: assets/images/202312/_NZ92999.jpg
       thumb: assets/images/202312/thumbnails/_NZ92999.jpg
@@ -103,6 +41,72 @@
     - lead: Alpine Lake
       src: assets/images/202309/_NZ94774-HDR.jpg
       thumb: assets/images/202309/thumbnails/_NZ94774-HDR.jpg
+
+- title: City & Architecture
+  bg_image: assets/backgrounds/city.jpg
+  items:
+    - lead: Tall and Small
+      src: assets/images/202312/_D857611e.jpg
+      thumb: assets/images/202312/thumbnails/_D857611e.jpg
+    - lead: Reflection
+      src: assets/images/202312/_D857580.jpg
+      thumb: assets/images/202312/thumbnails/_D857580.jpg
+    - lead: Look Up
+      src: assets/images/202310/_NZ97234.jpg
+      thumb: assets/images/202310/thumbnails/_NZ97234.jpg
+    - lead: Corner
+      src: assets/images/202311/_D853807.jpg
+      thumb: assets/images/202311/thumbnails/_D853807.jpg
+    - lead: Corner Place
+      src: assets/images/202312/_NZ90048e.jpg
+      thumb: assets/images/202312/thumbnails/_NZ90048e.jpg
+    - lead: Chimneys
+      src: assets/images/202312/_NZ90051e.jpg
+      thumb: assets/images/202312/thumbnails/_NZ90051e.jpg
+    - lead: Chainlink
+      src: assets/images/202312/_D857419.jpg
+      thumb: assets/images/202312/thumbnails/_D857419.jpg
+
+- title: Close Up
+  bg_image: assets/backgrounds/closeup.jpg
+  items:
+    - lead: Autumn Drop
+      src: assets/images/202311/_NZ90672.jpg
+      thumb: assets/images/202311/thumbnails/_NZ90672.jpg
+    - lead: Beads
+      src: assets/images/202310/_NZ94614s.jpg
+      thumb: assets/images/202310/thumbnails/_NZ94614s.jpg
+    - lead: Fragile Eyes
+      src: assets/images/202307/_DSC4860e.jpg
+      thumb: assets/images/202307/thumbnails/_DSC4860e.jpg
+    - lead: Impaired Vision
+      src: assets/images/202304/_DSC5267ee.jpg
+      thumb: assets/images/202304/thumbnails/_DSC5267ee.jpg
+    - lead: Frost
+      src: assets/images/202302/_DSC9177.jpg
+      thumb: assets/images/202302/thumbnails/_DSC9177.jpg
+
+- title: Artistic
+  bg_image: assets/backgrounds/artistic.jpg
+  items:
+    - lead: The Walk
+      src: assets/images/202312/_NZ90062.jpg
+      thumb: assets/images/202312/thumbnails/_NZ90062.jpg
+    - lead: Yellow
+      src: assets/images/202312/_D857588e.jpg
+      thumb: assets/images/202312/thumbnails/_D857588e.jpg
+    - lead: Serious
+      src: assets/images/202312/_D857602.jpg
+      thumb: assets/images/202312/thumbnails/_D857602.jpg
+    - lead: Shadow
+      src: assets/images/202309/_D857861e.jpg
+      thumb: assets/images/202309/thumbnails/_D857861e.jpg
+    - lead: Artifical Know
+      src: assets/images/202309/_NZ95503e.jpg
+      thumb: assets/images/202309/thumbnails/_NZ95503e.jpg
+    - lead: Almost Twins
+      src: assets/images/202309/_D858003.jpg
+      thumb: assets/images/202309/thumbnails/_D858003.jpg
 
 - title: Wildlife
   bg_image: assets/backgrounds/wildlife.jpg
