@@ -12,11 +12,11 @@ do
     for image in "${image_dir}"/*.jpg
     do
         filename=$(basename "${image}")
-        thumbnail_filepath="${thumbnail_dir}/${filename}"
+        thumbnail_filepath="${thumbnail_dir}/${filename%%.jpg}.webp"
         if [ "${image}" -nt "${thumbnail_filepath}" ]
         then
             echo "Generate thumbnail for ${image} -> ${thumbnail_filepath}"
-            convert -strip -resize x300 "${image}" "${thumbnail_filepath}" &
+            convert -define webp:thread-level=1 -define webp:method=3 -define webp:image-hint=photo -strip -resize x300 "${image}" "${thumbnail_filepath}" &
         else
             echo "Skipping thumbnail generation for ${image}"
         fi

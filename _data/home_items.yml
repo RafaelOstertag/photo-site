@@ -1,5 +1,5 @@
 - title: Fine Art
-  bg_image: assets/backgrounds/fineart.jpg
+  bg_image: assets/backgrounds/fineart.webp
   items:
     - lead: Reclining
       src: assets/images/202312/_NZ90016e.jpg
@@ -15,7 +15,7 @@
       src: assets/images/202312/_NZ93087.jpg
 
 - title: City & Architecture
-  bg_image: assets/backgrounds/city.jpg
+  bg_image: assets/backgrounds/city.webp
   items:
     - lead: Crammed
       src: assets/images/202401/_NZ94600.jpg
@@ -39,7 +39,7 @@
       src: assets/images/202312/_NZ90048e.jpg
 
 - title: Artistic
-  bg_image: assets/backgrounds/artistic.jpg
+  bg_image: assets/backgrounds/artistic.webp
   items:
     - lead: Scarry
       src: assets/images/202401/_NZ94637.jpg
@@ -57,7 +57,7 @@
       src: assets/images/202309/_D857861e.jpg
   
 - title: Street
-  bg_image: assets/backgrounds/street.jpg
+  bg_image: assets/backgrounds/street.webp
   items:
     - lead: Semi Arcs
       src: assets/images/202401/_NZ94615e.jpg
@@ -67,7 +67,7 @@
       src: assets/images/202312/_NZ93247.jpg
 
 - title: Close Up
-  bg_image: assets/backgrounds/closeup.jpg
+  bg_image: assets/backgrounds/closeup.webp
   items:
     - lead: Autumn Drop
       src: assets/images/202311/_NZ90672.jpg
@@ -81,7 +81,7 @@
       src: assets/images/202302/_DSC9177.jpg
 
 - title: Wildlife
-  bg_image: assets/backgrounds/wildlife.jpg
+  bg_image: assets/backgrounds/wildlife.webp
   items:
     - lead: Flip
       src: assets/images/202312/_NZ94264e.jpg
@@ -95,7 +95,7 @@
       src: assets/images/202307/_DSC9484ee.jpg
 
 - title: Landscape
-  bg_image: assets/backgrounds/landscape.jpg
+  bg_image: assets/backgrounds/landscape.webp
   items:
     - lead: Simply Winter
       src: assets/images/202312/_NZ91196e.jpg

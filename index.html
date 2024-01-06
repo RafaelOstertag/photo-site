@@ -24,7 +24,7 @@ description: |
 
 {%- if forloop.index == 3 -%}
 <div class="text-light lead-img"
-    style='background: linear-gradient(rgba(0, 0, 0, 0.2),rgba(0, 0, 0, 0.2)),url("{% link assets/backgrounds/monthly.jpg %}");'>
+    style='background: linear-gradient(rgba(0, 0, 0, 0.2),rgba(0, 0, 0, 0.2)),url("{% link assets/backgrounds/monthly.webp %}");'>
     <h1>Monthly</h1>
     <p class="fs-2 pt-3 ps-5">
         <a class="link-light link-underline link-underline-opacity-0 link-offset-3 link-underline-light"
@@ -37,7 +37,7 @@ description: |
 
 {%- comment -%} {%- if forloop.index == 6 -%}
 <div class="text-light lead-img"
-    style='background: linear-gradient(rgba(0, 0, 0, 0.2),rgba(0, 0, 0, 0.2)),url("{% link assets/backgrounds/blackwhite.jpg %}");'>
+    style='background: linear-gradient(rgba(0, 0, 0, 0.2),rgba(0, 0, 0, 0.2)),url("{% link assets/backgrounds/blackwhite.webp %}");'>
     <h1>Black & White</h1>
     <p class="fs-2 pt-3 ps-5">
         <a class="link-light link-underline link-underline-opacity-0 link-offset-3 link-underline-light"
@@ -57,7 +57,7 @@ description: |
     {% assign components = item.src | split: "/" %}
     {% assign filename = components | last %}
     {% assign path = item.src | replace_first: filename, "thumbnails" %}
-    {% assign thumbnail = path | append: "/" | append: filename %}
+    {% assign thumbnail = path | append: "/" | append: filename | replace_first: ".jpg", ".webp" %}
 
     <a href="{% link {{item.src}} %}"><img class="rounded" alt="{{item.lead}}" src="{% link {{thumbnail}} %}" /></a>
     {% endfor %}

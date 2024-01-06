@@ -3,7 +3,7 @@ import os
 
 def _photo_name_to_thumbnail(photo: dict, path: str) -> str:
     photo_dirname = os.path.dirname(photo["image_path"])
-    photo_filename = os.path.basename(photo["image_path"])
+    photo_filename = os.path.basename(photo["image_path"]).removesuffix(".jpg") + ".webp"
     return os.path.join(photo_dirname, path, photo_filename)
 
 
