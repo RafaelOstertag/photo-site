@@ -2,6 +2,13 @@
 layout: home
 title: "Rafael Ostertag"
 footer: "no"
+description: |
+    Discover the world through the lens of an amateur photographer. Join me on a personal
+    exploration of moments, where every snapshot tells a story. As an enthusiast capturing the beauty of everyday life, my
+    gallery features a humble yet heartfelt collection of photographs. From candid shots of daily scenes to attempts at
+    mastering the art of composition, each image reflects the joy and curiosity of an amateur photographer finding beauty in
+    the ordinary. Embrace the imperfections and genuine charm of amateur photography as we navigate this visual journey
+    together.
 ---
 
 <div class="position-relative bg-dark">
@@ -13,7 +20,6 @@ footer: "no"
     </div>
 </div>
 
-
 {% for category in site.data.home_items %}
 
 {%- if forloop.index == 3 -%}
@@ -21,8 +27,9 @@ footer: "no"
     style='background: linear-gradient(rgba(0, 0, 0, 0.2),rgba(0, 0, 0, 0.2)),url("{% link assets/backgrounds/monthly.jpg %}");'>
     <h1>Monthly</h1>
     <p class="fs-2 pt-3 ps-5">
-        Visit the monthly galleries <a href="{% link monthly/index.md %}">
-            <span class="carousel-control-next-icon"></span>
+        <a class="link-light link-underline link-underline-opacity-0 link-offset-3 link-underline-light"
+            href="{% link monthly/index.md %}">Visit the
+            monthly galleries <span class="carousel-control-next-icon"></span>
         </a>
     </p>
 </div>
@@ -33,14 +40,17 @@ footer: "no"
     style='background: linear-gradient(rgba(0, 0, 0, 0.2),rgba(0, 0, 0, 0.2)),url("{% link assets/backgrounds/blackwhite.jpg %}");'>
     <h1>Black & White</h1>
     <p class="fs-2 pt-3 ps-5">
-        Visit the black & white gallery <a href="{% link black_and_white.md %}">
-            <span class="carousel-control-next-icon"></span>
+        <a class="link-light link-underline link-underline-opacity-0 link-offset-3 link-underline-light"
+            href="{% link black_and_white.md %}">Visit the
+            black & white gallery <span class="carousel-control-next-icon"></span>
         </a>
     </p>
 </div>
 {%- endif -%}
 
-<h1 class="w-bg text-light" style='background-image: url("{% link {{category.bg_image}} %}");'>{{category.title}}
+<h1 class="w-bg text-light"
+    style='background: linear-gradient(rgba(0, 0, 0, 0.2),rgba(0, 0, 0, 0.2)),url("{% link {{category.bg_image}} %}");'>
+    {{category.title}}
 </h1>
 <div class="container homeGallery">
     {% for item in category.items %}
