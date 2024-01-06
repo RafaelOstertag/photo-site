@@ -16,7 +16,7 @@ do
         if [ "${image}" -nt "${thumbnail_filepath}" ]
         then
             echo "Generate thumbnail for ${image} -> ${thumbnail_filepath}"
-            convert -define webp:thread-level=1 -define webp:method=3 -define webp:image-hint=photo -strip -resize x300 "${image}" "${thumbnail_filepath}" &
+            convert -define webp:method=3 -define webp:image-hint=photo -strip -resize x300 "${image}" "${thumbnail_filepath}" &
         else
             echo "Skipping thumbnail generation for ${image}"
         fi
