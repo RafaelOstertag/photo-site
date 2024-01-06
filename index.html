@@ -35,7 +35,7 @@ description: |
 </div>
 {%- endif -%}
 
-{%- if forloop.index == 6 -%}
+{%- comment -%} {%- if forloop.index == 6 -%}
 <div class="text-light lead-img"
     style='background: linear-gradient(rgba(0, 0, 0, 0.2),rgba(0, 0, 0, 0.2)),url("{% link assets/backgrounds/blackwhite.jpg %}");'>
     <h1>Black & White</h1>
@@ -47,7 +47,7 @@ description: |
     </p>
 </div>
 {%- endif -%}
-
+{%- endcomment -%}
 <h1 class="w-bg text-light"
     style='background: linear-gradient(rgba(0, 0, 0, 0.2),rgba(0, 0, 0, 0.2)),url("{% link {{category.bg_image}} %}");'>
     {{category.title}}
