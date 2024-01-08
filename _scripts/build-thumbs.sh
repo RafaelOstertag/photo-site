@@ -4,6 +4,7 @@ set -euo pipefail
 
 . "$(dirname $0)/common.sh"
 
+echo "Start generating thumbnails"
 
 for image_dir in ${IMAGE_DIRS}
 do
@@ -17,8 +18,6 @@ do
         then
             echo "Generate thumbnail for ${image} -> ${thumbnail_filepath}"
             convert -define webp:method=3 -define webp:image-hint=photo -strip -resize x300 "${image}" "${thumbnail_filepath}" &
-        else
-            echo "Skipping thumbnail generation for ${image}"
         fi
 
         if [ $(jobs -r | wc -l | tr -d " ") -ge 4 ]
@@ -27,3 +26,5 @@ do
         fi
     done
 done
+
+echo "Done generating thumbnails"

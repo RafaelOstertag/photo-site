@@ -2,6 +2,7 @@
 layout: default
 title: "License"
 footer: "no"
+noindex: true
 ---
 # License
 

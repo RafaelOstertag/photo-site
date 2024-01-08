@@ -1,6 +1,8 @@
 - title: Fine Art
   bg_image: assets/backgrounds/fineart.webp
   items:
+    - lead: Dry Fountain
+      src: assets/images/202401/_D858608.jpg
     - lead: Reclining
       src: assets/images/202312/_NZ90016e.jpg
     - lead: Simple
@@ -17,6 +19,8 @@
 - title: City & Architecture
   bg_image: assets/backgrounds/city.webp
   items:
+    - lead: Big Brother
+      src: assets/images/202401/_D858583.jpg
     - lead: Crammed
       src: assets/images/202401/_NZ94600.jpg
     - lead: Imposing
@@ -41,6 +45,8 @@
 - title: Artistic
   bg_image: assets/backgrounds/artistic.webp
   items:
+    - lead: Column
+      src: assets/images/202401/_D858626e.jpg
     - lead: Scarry
       src: assets/images/202401/_NZ94637.jpg
     - lead: Cubes
