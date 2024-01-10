@@ -45,6 +45,8 @@
 - title: Artistic
   bg_image: assets/backgrounds/artistic.webp
   items:
+    - lead: Bed in Space
+      src: assets/images/202401/_NZ94666ee.jpg
     - lead: Column
       src: assets/images/202401/_D858626e.jpg
     - lead: Scarry
