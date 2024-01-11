@@ -13,3 +13,13 @@ include:
 plugins:
   - jekyll-sitemap
   - jekyll-last-modified-at
+
+defaults:
+  - scope:
+      path: license.md
+    values:
+      sitemap: false
+  - scope:
+      path: contact.html
+    values:
+      sitemap: false
