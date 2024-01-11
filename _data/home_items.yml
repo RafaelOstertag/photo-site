@@ -19,6 +19,10 @@
 - title: City & Architecture
   bg_image: assets/backgrounds/city.webp
   items:
+    - lead: Shadows
+      src: assets/images/202401/_NZ94715e.jpg
+    - lead: Circles of Light
+      src: assets/images/202401/_NZ94703e.jpg
     - lead: Big Brother
       src: assets/images/202401/_D858583.jpg
     - lead: Crammed
