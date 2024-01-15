@@ -1,6 +1,10 @@
 - title: Fine Art
   bg_image: assets/backgrounds/fineart.webp
   items:
+    - lead: Dirty Old
+      src: assets/images/202401/_NZ95075e.jpg
+    - lead: Alti Liebi
+      src: assets/images/202401/_NZ94988e.jpg
     - lead: Crying Sadness
       src: assets/images/202401/_NZ94945.jpg
     - lead: Strength
@@ -27,6 +31,16 @@
 - title: City & Architecture
   bg_image: assets/backgrounds/city.webp
   items:
+    - lead: Steps to the Sky
+      src: assets/images/202401/_NZ95078.jpg
+    - lead: Blue Hole
+      src: assets/images/202401/_NZ95060e.jpg
+    - lead: Skyward
+      src: assets/images/202401/_NZ95031.jpg
+    - lead: Mirror Mirror
+      src: assets/images/202401/_NZ94959e.jpg
+    - lead: Turquoise Windows
+      src: assets/images/202401/_NZ94955.jpg
     - lead: Red
       src: assets/images/202401/_NZ94943e.jpg
     - lead: Capitol
