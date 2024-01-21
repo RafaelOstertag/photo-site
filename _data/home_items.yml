@@ -137,6 +137,10 @@
 - title: Landscape
   bg_image: assets/backgrounds/landscape.webp
   items:
+    - lead: Rising Mist
+      src: assets/images/202401/_D858657e.jpg
+    - lead: Curves
+      src: assets/images/202401/_D858785e.jpg
     - lead: Simply Winter
       src: assets/images/202312/_NZ91196e.jpg
     - lead: Soft Sunrise
