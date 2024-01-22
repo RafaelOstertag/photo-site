@@ -1,6 +1,10 @@
 - title: Fine Art
   bg_image: assets/backgrounds/fineart.webp
   items:
+    - lead: Yellow
+      src: assets/images/202401/_D858810.jpg
+    - lead: Lined Up
+      src: assets/images/202401/_D858795.jpg
     - lead: Dirty Old
       src: assets/images/202401/_NZ95075e.jpg
     - lead: Alti Liebi
@@ -31,6 +35,10 @@
 - title: City & Architecture
   bg_image: assets/backgrounds/city.webp
   items:
+    - lead: Girders
+      src: assets/images/202401/_D858823.jpg
+    - lead: Obscured
+      src: assets/images/202401/_D858822.jpg
     - lead: Steps to the Sky
       src: assets/images/202401/_NZ95078.jpg
     - lead: Blue Hole
@@ -75,6 +83,12 @@
 - title: Artistic
   bg_image: assets/backgrounds/artistic.webp
   items:
+    - lead: Contrast
+      src: assets/images/202401/_D858861.jpg
+    - lead: Skewed
+      src: assets/images/202401/_D858856.jpg
+    - lead: Criss-Cross
+      src: assets/images/202401/_D858827.jpg
     - lead: Bed in Space
       src: assets/images/202401/_NZ94666ee.jpg
     - lead: Column
