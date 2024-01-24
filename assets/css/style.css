@@ -17,10 +17,6 @@ h1.w-bg {
     line-height: 150px;
 }
 
-div.container+h1.w-bg {
-    margin-top: 5rem;
-}
-
-div.lead-img+h1.w-bg {
-    margin-top: 0;
+a.smooth {
+    scroll-behavior: smooth;
 }

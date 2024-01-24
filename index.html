@@ -12,11 +12,15 @@ description: |
 ---
 
 <div class="position-relative bg-dark">
-    <img style="z-index: 0; opacity: 0.5;" class="position-sticky top-0 start-0 img-fluid"
+    <img alt="" style="z-index: 0; opacity: 0.5;" class="position-sticky top-0 start-0 img-fluid"
         src="{% link assets/backgrounds/title.webp %}" />
 
-    <div style="z-index: 1;" class="position-absolute display-1 top-50 start-0 text-light translate-middle-y">
-        <p class="ms-5">Rafael Ostertag . Photo</p>
+    <div style="z-index: 1;" class="position-absolute top-50 start-0 text-light translate-middle-y">
+        <h1 class="ms-5 display-1">Rafael Ostertag . Photo</h1>
+    </div>
+
+    <div style="z-index: 1;" class="position-absolute bottom-0 start-50 text-light translate-middle-y">
+        <a href="#photo-start" class="smooth link-light link-underline link-underline-opacity-0" alt="Jump to content"><i class="bi bi-arrow-down-circle-fill display-5"></i></a>
     </div>
 </div>
 
@@ -25,7 +29,7 @@ description: |
 {%- if forloop.index == 3 -%}
 <div class="text-light lead-img"
     style='background: linear-gradient(rgba(0, 0, 0, 0.2),rgba(0, 0, 0, 0.2)),url("{% link assets/backgrounds/monthly.webp %}");'>
-    <h1>Monthly</h1>
+    <h2 class="display-4">Monthly</h2>
     <p class="fs-2 pt-3 ps-5">
         <a class="link-light link-underline link-underline-opacity-0 link-offset-3 link-underline-light"
             href="{% link monthly/index.md %}">Visit the
@@ -38,7 +42,7 @@ description: |
 {%- comment -%} {%- if forloop.index == 6 -%}
 <div class="text-light lead-img"
     style='background: linear-gradient(rgba(0, 0, 0, 0.2),rgba(0, 0, 0, 0.2)),url("{% link assets/backgrounds/blackwhite.webp %}");'>
-    <h1>Black & White</h1>
+    <h2 class="display-4">Black & White</h2>
     <p class="fs-2 pt-3 ps-5">
         <a class="link-light link-underline link-underline-opacity-0 link-offset-3 link-underline-light"
             href="{% link black_and_white.md %}">Visit the
@@ -48,20 +52,25 @@ description: |
 </div>
 {%- endif -%}
 {%- endcomment -%}
-<h1 class="w-bg text-light"
-    style='background: linear-gradient(rgba(0, 0, 0, 0.35),rgba(0, 0, 0, 0.35)),url("{% link {{category.bg_image}} %}");'>
-    {{category.title}}
-</h1>
-<div class="container homeGallery">
-    {% for item in category.items %}
-    {% assign components = item.src | split: "/" %}
-    {% assign filename = components | last %}
-    {% assign path = item.src | replace_first: filename, "thumbnails" %}
-    {% assign thumbnail = path | append: "/" | append: filename | replace_first: ".jpg", ".webp" %}
+<section class="ms-4 mt-5 mb-4"
+{%- if forloop.index == 1 -%}
+    id="photo-start"
+{%- endif -%}
+>
+    <h2 class="display-5">
+        {{category.title}}
+    </h2>
+    <div class="container homeGallery">
+        {% for item in category.items %}
+        {% assign components = item.src | split: "/" %}
+        {% assign filename = components | last %}
+        {% assign path = item.src | replace_first: filename, "thumbnails" %}
+        {% assign thumbnail = path | append: "/" | append: filename | replace_first: ".jpg", ".webp" %}
 
-    <a href="{% link {{item.src}} %}"><img class="rounded" alt="{{item.lead}}" src="{% link {{thumbnail}} %}" /></a>
-    {% endfor %}
-</div>
+        <a href="{% link {{item.src}} %}"><img class="rounded" alt="{{item.lead}}" src="{% link {{thumbnail}} %}" /></a>
+        {% endfor %}
+    </div>
+</section>
 {% endfor %}
 
 <div class="container-fluid pt-5 pb-5 ps-5 pe-5 bg-dark text-light mt-5">
@@ -80,7 +89,7 @@ description: |
             </ul>
         </div>
 
-        <div class="col-md-6 text-end">
+        <div class="col-md-6">
             All photos on this site are licensed under a <a
                 class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-75-hover"
                 href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International
