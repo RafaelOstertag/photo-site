@@ -1,6 +1,8 @@
 - title: Fine Art
   bg_image: assets/backgrounds/fineart.webp
   items:
+    - lead: Dogs
+      src: assets/images/202401/_D858993e.jpg
     - lead: Delicate
       src: assets/images/202401/_D858907.jpg
     - lead: Yellow
@@ -19,8 +21,6 @@
       src: assets/images/202401/_NZ94851.jpg
     - lead: Lurking
       src: assets/images/202401/_NZ94813e.jpg
-    - lead: Dry Fountain
-      src: assets/images/202401/_D858608.jpg
     - lead: Reclining
       src: assets/images/202312/_NZ90016e.jpg
     - lead: Simple
@@ -37,6 +37,8 @@
 - title: City & Architecture
   bg_image: assets/backgrounds/city.webp
   items:
+    - lead: No title
+      src: assets/images/202401/_D858997.jpg
     - lead: Chinese Garden
       src: assets/images/202401/_D858974e.jpg
     - lead: Girders
@@ -53,8 +55,6 @@
       src: assets/images/202401/_NZ94959e.jpg
     - lead: Turquoise Windows
       src: assets/images/202401/_NZ94955.jpg
-    - lead: Shadows
-      src: assets/images/202401/_NZ94715e.jpg
     - lead: Circles of Light
       src: assets/images/202401/_NZ94703e.jpg
     - lead: Big Brother
