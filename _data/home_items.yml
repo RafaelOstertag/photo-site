@@ -1,6 +1,8 @@
 - title: Fine Art
   bg_image: assets/backgrounds/fineart.webp
   items:
+    - lead: Delicate
+      src: assets/images/202401/_D858907.jpg
     - lead: Yellow
       src: assets/images/202401/_D858810.jpg
     - lead: Lined Up
@@ -35,6 +37,8 @@
 - title: City & Architecture
   bg_image: assets/backgrounds/city.webp
   items:
+    - lead: Chinese Garden
+      src: assets/images/202401/_D858974e.jpg
     - lead: Girders
       src: assets/images/202401/_D858823.jpg
     - lead: Obscured
@@ -49,22 +53,14 @@
       src: assets/images/202401/_NZ94959e.jpg
     - lead: Turquoise Windows
       src: assets/images/202401/_NZ94955.jpg
-    - lead: Red
-      src: assets/images/202401/_NZ94943e.jpg
-    - lead: Capitol
-      src: assets/images/202401/_NZ94878.jpg
     - lead: Shadows
       src: assets/images/202401/_NZ94715e.jpg
     - lead: Circles of Light
       src: assets/images/202401/_NZ94703e.jpg
     - lead: Big Brother
       src: assets/images/202401/_D858583.jpg
-    - lead: Crammed
-      src: assets/images/202401/_NZ94600.jpg
     - lead: Imposing
       src: assets/images/202401/_NZ94584.jpg
-    - lead: Converging
-      src: assets/images/202401/_NZ94560e.jpg
     - lead: Tall and Small
       src: assets/images/202312/_D857611e.jpg
     - lead: Reflection
@@ -75,42 +71,14 @@
       src: assets/images/202312/_NZ93033e.jpg
     - lead: Look Up
       src: assets/images/202310/_NZ97234.jpg
-    - lead: Corner
-      src: assets/images/202311/_D853807.jpg
-    - lead: Corner Place
-      src: assets/images/202312/_NZ90048e.jpg
-
-- title: Artistic
-  bg_image: assets/backgrounds/artistic.webp
-  items:
-    - lead: Contrast
-      src: assets/images/202401/_D858861.jpg
-    - lead: Skewed
-      src: assets/images/202401/_D858856.jpg
-    - lead: Criss-Cross
-      src: assets/images/202401/_D858827.jpg
-    - lead: Bed in Space
-      src: assets/images/202401/_NZ94666ee.jpg
-    - lead: Column
-      src: assets/images/202401/_D858626e.jpg
-    - lead: Scarry
-      src: assets/images/202401/_NZ94637.jpg
-    - lead: Cubes
-      src: assets/images/202401/_NZ94632.jpg
-    - lead: The Walk
-      src: assets/images/202312/_NZ90062.jpg
-    - lead: Yellow
-      src: assets/images/202312/_D857588e.jpg
-    - lead: Beam
-      src: assets/images/202312/_D854823.jpg
-    - lead: Serious
-      src: assets/images/202312/_D857602.jpg
-    - lead: Shadow
-      src: assets/images/202309/_D857861e.jpg
   
 - title: Street
   bg_image: assets/backgrounds/street.webp
   items:
+    - lead: Discussion
+      src: assets/images/202401/_D858949.jpg
+    - lead: Enjoying
+      src: assets/images/202401/_D858891.jpg
     - lead: Descending
       src: assets/images/202401/_NZ94825e.jpg
     - lead: Semi Arcs
@@ -119,6 +87,26 @@
       src: assets/images/202312/_NZ90049.jpg
     - lead: Lamp Post
       src: assets/images/202312/_NZ93247.jpg
+
+- title: Landscape
+  bg_image: assets/backgrounds/landscape.webp
+  items:
+    - lead: Rising Mist
+      src: assets/images/202401/_D858657e.jpg
+    - lead: Curves
+      src: assets/images/202401/_D858785e.jpg
+    - lead: Simply Winter
+      src: assets/images/202312/_NZ91196e.jpg
+    - lead: Soft Sunrise
+      src: assets/images/202312/_NZ91091e.jpg
+    - lead: Two of a Kind
+      src: assets/images/202311/_NZ97454.jpg
+    - lead: Alps
+      src: assets/images/202309/_NZ94858e.jpg
+    - lead: Alpine Lake
+      src: assets/images/202309/_NZ94726e.jpg
+    - lead: Alpine Lake
+      src: assets/images/202309/_NZ94774-HDR.jpg
 
 - title: Close Up
   bg_image: assets/backgrounds/closeup.webp
@@ -148,22 +136,30 @@
     - lead: Cuddling
       src: assets/images/202307/_DSC9484ee.jpg
 
-- title: Landscape
-  bg_image: assets/backgrounds/landscape.webp
+- title: Artistic
+  bg_image: assets/backgrounds/artistic.webp
   items:
-    - lead: Rising Mist
-      src: assets/images/202401/_D858657e.jpg
-    - lead: Curves
-      src: assets/images/202401/_D858785e.jpg
-    - lead: Simply Winter
-      src: assets/images/202312/_NZ91196e.jpg
-    - lead: Soft Sunrise
-      src: assets/images/202312/_NZ91091e.jpg
-    - lead: Two of a Kind
-      src: assets/images/202311/_NZ97454.jpg
-    - lead: Alps
-      src: assets/images/202309/_NZ94858e.jpg
-    - lead: Alpine Lake
-      src: assets/images/202309/_NZ94726e.jpg
-    - lead: Alpine Lake
-      src: assets/images/202309/_NZ94774-HDR.jpg
+    - lead: Contrast
+      src: assets/images/202401/_D858861.jpg
+    - lead: Skewed
+      src: assets/images/202401/_D858856.jpg
+    - lead: Criss-Cross
+      src: assets/images/202401/_D858827.jpg
+    - lead: Bed in Space
+      src: assets/images/202401/_NZ94666ee.jpg
+    - lead: Column
+      src: assets/images/202401/_D858626e.jpg
+    - lead: Scarry
+      src: assets/images/202401/_NZ94637.jpg
+    - lead: Cubes
+      src: assets/images/202401/_NZ94632.jpg
+    - lead: The Walk
+      src: assets/images/202312/_NZ90062.jpg
+    - lead: Yellow
+      src: assets/images/202312/_D857588e.jpg
+    - lead: Beam
+      src: assets/images/202312/_D854823.jpg
+    - lead: Serious
+      src: assets/images/202312/_D857602.jpg
+    - lead: Shadow
+      src: assets/images/202309/_D857861e.jpg
