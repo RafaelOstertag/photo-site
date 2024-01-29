@@ -1,6 +1,8 @@
 - title: Fine Art
   bg_image: assets/backgrounds/fineart.webp
   items:
+    - lead: Mystic Dwelling
+      src: assets/images/202401/_NZ95169.jpg
     - lead: Dogs
       src: assets/images/202401/_D858993e.jpg
     - lead: Delicate
@@ -91,6 +93,8 @@
 - title: Landscape
   bg_image: assets/backgrounds/landscape.webp
   items:
+    - lead: Walk into the Unknown
+      src: assets/images/202401/_NZ95175.jpg
     - lead: Rising Mist
       src: assets/images/202401/_D858657e.jpg
     - lead: Curves
@@ -111,6 +115,8 @@
 - title: Close Up
   bg_image: assets/backgrounds/closeup.webp
   items:
+    - lead: Frozen Fragility
+      src: assets/images/202401/_NZ95191.jpg
     - lead: Autumn Drop
       src: assets/images/202311/_NZ90672.jpg
     - lead: Beads
