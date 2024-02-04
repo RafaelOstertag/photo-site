@@ -1,6 +1,12 @@
 - title: Fine Art
   bg_image: assets/backgrounds/fineart.webp
   items:
+    - lead: Modern Cave Entrance
+      src: assets/images/202402/_NZ95372.jpg
+    - lead: Sunrise
+      src: assets/images/202402/_NZ95288.jpg
+    - lead: Fogged Sunrise
+      src: assets/images/202402/_NZ95270.jpg
     - lead: Mystic Dwelling
       src: assets/images/202401/_NZ95169.jpg
     - lead: Dogs
@@ -77,6 +83,8 @@
 - title: Street
   bg_image: assets/backgrounds/street.webp
   items:
+    - lead: Early Morning
+      src: assets/images/202402/_NZ95356.jpg
     - lead: Discussion
       src: assets/images/202401/_D858949.jpg
     - lead: Enjoying
