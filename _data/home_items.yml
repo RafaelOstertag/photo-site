@@ -1,6 +1,14 @@
 - title: Fine Art
   bg_image: assets/backgrounds/fineart.webp
   items:
+    - lead: Spot lit
+      src: assets/images/202402/_NZ95612.jpg
+    - lead: Distorting Reflection
+      src: assets/images/202402/_NZ95436.jpg
+    - lead: Sunlit
+      src: assets/images/202402/_NZ95381.jpg
+    - lead: Soft Light
+      src: assets/images/202402/_NZ95373.jpg
     - lead: Modern Cave Entrance
       src: assets/images/202402/_NZ95372.jpg
     - lead: Sunrise
@@ -45,6 +53,8 @@
 - title: City & Architecture
   bg_image: assets/backgrounds/city.webp
   items:
+    - lead: Facade
+      src: assets/images/202402/_NZ95467.jpg
     - lead: No title
       src: assets/images/202401/_D858997.jpg
     - lead: Chinese Garden
@@ -101,6 +111,8 @@
 - title: Landscape
   bg_image: assets/backgrounds/landscape.webp
   items:
+    - lead: Gathering
+      src: assets/images/202402/_NZ95419.jpg
     - lead: Walk into the Unknown
       src: assets/images/202401/_NZ95175.jpg
     - lead: Rising Mist
@@ -153,6 +165,8 @@
 - title: Artistic
   bg_image: assets/backgrounds/artistic.webp
   items:
+    - lead: Sun
+      src: assets/images/202402/_NZ95535e.jpg
     - lead: Contrast
       src: assets/images/202401/_D858861.jpg
     - lead: Skewed
