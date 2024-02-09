@@ -25,7 +25,7 @@ description: |
     </div>
 </div>
 
-<div class="mt-5 mb-4 container-fluid homeGallery">
+<div class="mt-5 mb-4 container-fluid homeGallery" id="photo-start">
     {% for item in site.data.home_items %}
     {% assign components = item.src | split: "/" %}
     {% assign filename = components | last %}
