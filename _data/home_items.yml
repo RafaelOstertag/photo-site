@@ -1,193 +1,150 @@
-- title: Fine Art
-  bg_image: assets/backgrounds/fineart.webp
-  items:
-    - lead: Spot lit
-      src: assets/images/202402/_NZ95612.jpg
-    - lead: Distorting Reflection
-      src: assets/images/202402/_NZ95436.jpg
-    - lead: Sunlit
-      src: assets/images/202402/_NZ95381.jpg
-    - lead: Soft Light
-      src: assets/images/202402/_NZ95373.jpg
-    - lead: Modern Cave Entrance
-      src: assets/images/202402/_NZ95372.jpg
-    - lead: Sunrise
-      src: assets/images/202402/_NZ95288.jpg
-    - lead: Misty Sunrise
-      src: assets/images/202402/_NZ95270.jpg
-    - lead: Mystic Dwelling
-      src: assets/images/202401/_NZ95169.jpg
-    - lead: Dogs
-      src: assets/images/202401/_D858993e.jpg
-    - lead: Delicate
-      src: assets/images/202401/_D858907.jpg
-    - lead: Yellow
-      src: assets/images/202401/_D858810.jpg
-    - lead: Lined Up
-      src: assets/images/202401/_D858795e.jpg
-    - lead: Dirty Old
-      src: assets/images/202401/_NZ95075e.jpg
-    - lead: Alti Liebi
-      src: assets/images/202401/_NZ94988e.jpg
-    - lead: Crying Sadness
-      src: assets/images/202401/_NZ94945.jpg
-    - lead: Strength
-      src: assets/images/202401/_NZ94905e.jpg
-    - lead: Cold Window
-      src: assets/images/202401/_NZ94851.jpg
-    - lead: Lurking
-      src: assets/images/202401/_NZ94813e.jpg
-    - lead: Reclining
-      src: assets/images/202312/_NZ90016e.jpg
-    - lead: Simple
-      src: assets/images/202312/_NZ92999.jpg
-    - lead: Ducklings
-      src: assets/images/202312/_NZ90040e.jpg
-    - lead: Cozy Outside
-      src: assets/images/202312/_NZ90043e.jpg
-    - lead: No Pictures
-      src: assets/images/202312/_D857409.jpg
-    - lead: Reaching
-      src: assets/images/202312/_NZ93087.jpg
+- lead: Spot lit
+  src: assets/images/202402/_NZ95612.jpg
+- lead: Distorting Reflection
+  src: assets/images/202402/_NZ95436.jpg
+- lead: Sunlit
+  src: assets/images/202402/_NZ95381.jpg
+- lead: Soft Light
+  src: assets/images/202402/_NZ95373.jpg
+- lead: Modern Cave Entrance
+  src: assets/images/202402/_NZ95372.jpg
+- lead: Sunrise
+  src: assets/images/202402/_NZ95288.jpg
+- lead: Misty Sunrise
+  src: assets/images/202402/_NZ95270.jpg
+- lead: Mystic Dwelling
+  src: assets/images/202401/_NZ95169.jpg
+- lead: Dogs
+  src: assets/images/202401/_D858993e.jpg
+- lead: Delicate
+  src: assets/images/202401/_D858907.jpg
+- lead: Yellow
+  src: assets/images/202401/_D858810.jpg
+- lead: Lined Up
+  src: assets/images/202401/_D858795e.jpg
+- lead: Dirty Old
+  src: assets/images/202401/_NZ95075e.jpg
+- lead: Alti Liebi
+  src: assets/images/202401/_NZ94988e.jpg
+- lead: Crying Sadness
+  src: assets/images/202401/_NZ94945.jpg
+- lead: Strength
+  src: assets/images/202401/_NZ94905e.jpg
+- lead: Cold Window
+  src: assets/images/202401/_NZ94851.jpg
+- lead: Lurking
+  src: assets/images/202401/_NZ94813e.jpg
+- lead: Reclining
+  src: assets/images/202312/_NZ90016e.jpg
+- lead: Simple
+  src: assets/images/202312/_NZ92999.jpg
+- lead: Ducklings
+  src: assets/images/202312/_NZ90040e.jpg
+- lead: Cozy Outside
+  src: assets/images/202312/_NZ90043e.jpg
+- lead: No Pictures
+  src: assets/images/202312/_D857409.jpg
+- lead: Reaching
+  src: assets/images/202312/_NZ93087.jpg
+- lead: Facade
+  src: assets/images/202402/_NZ95467.jpg
+- lead: No title
+  src: assets/images/202401/_D858997.jpg
+- lead: Chinese Garden
+  src: assets/images/202401/_D858974e.jpg
+- lead: Girders
+  src: assets/images/202401/_D858823.jpg
+- lead: Obscured
+  src: assets/images/202401/_D858822.jpg
+- lead: Steps to the Sky
+  src: assets/images/202401/_NZ95078.jpg
+- lead: Blue Hole
+  src: assets/images/202401/_NZ95060e.jpg
+- lead: Skyward
+  src: assets/images/202401/_NZ95031.jpg
+- lead: Mirror Mirror
+  src: assets/images/202401/_NZ94959e.jpg
+- lead: Turquoise Windows
+  src: assets/images/202401/_NZ94955.jpg
+- lead: Circles of Light
+  src: assets/images/202401/_NZ94703e.jpg
+- lead: Big Brother
+  src: assets/images/202401/_D858583.jpg
+- lead: Imposing
+  src: assets/images/202401/_NZ94584.jpg
+- lead: Tall and Small
+  src: assets/images/202312/_D857611e.jpg
+- lead: Reflection
+  src: assets/images/202312/_D857580.jpg
+- lead: Inclusion
+  src: assets/images/202312/_NZ93040e.jpg
+- lead: Symmetry
+  src: assets/images/202312/_NZ93033e.jpg
+- lead: Look Up
+  src: assets/images/202310/_NZ97234.jpg
+- lead: Early Morning
+  src: assets/images/202402/_NZ95356.jpg
+- lead: Discussion
+  src: assets/images/202401/_D858949.jpg
+- lead: Enjoying
+  src: assets/images/202401/_D858891.jpg
+- lead: Descending
+  src: assets/images/202401/_NZ94825e.jpg
+- lead: Semi Arcs
+  src: assets/images/202401/_NZ94615e.jpg
+- lead: Key hole
+  src: assets/images/202312/_NZ90049.jpg
+- lead: Lamp Post
+  src: assets/images/202312/_NZ93247.jpg
+- lead: Gathering
+  src: assets/images/202402/_NZ95419.jpg
+- lead: Walk into the Unknown
+  src: assets/images/202401/_NZ95175.jpg
+- lead: Rising Mist
+  src: assets/images/202401/_D858657e.jpg
+- lead: Simply Winter
+  src: assets/images/202312/_NZ91196e.jpg
+- lead: Soft Sunrise
+  src: assets/images/202312/_NZ91091e.jpg
+- lead: Two of a Kind
+  src: assets/images/202311/_NZ97454.jpg
+- lead: Alps
+  src: assets/images/202309/_NZ94858e.jpg
+- lead: Alpine Lake
+  src: assets/images/202309/_NZ94726e.jpg
+- lead: Alpine Lake
+  src: assets/images/202309/_NZ94774-HDR.jpg
+- lead: Frozen Fragility
+  src: assets/images/202401/_NZ95191.jpg
+- lead: Autumn Drop
+  src: assets/images/202311/_NZ90672.jpg
+- lead: Beads
+  src: assets/images/202310/_NZ94614s.jpg
+- lead: Fragile Eyes
+  src: assets/images/202307/_DSC4860e.jpg
+- lead: Impaired Vision
+  src: assets/images/202304/_DSC5267ee.jpg
+- lead: Frost
+  src: assets/images/202302/_DSC9177.jpg
+- lead: Flip
+  src: assets/images/202312/_NZ94264e.jpg
+- lead: Pierced
+  src: assets/images/202312/_NZ94248e.jpg
+- lead: Brawl
+  src: assets/images/202312/_NZ92314.jpg
+- lead: Cuddling
+  src: assets/images/202307/_DSC9484ee.jpg
+- lead: Sun
+  src: assets/images/202402/_NZ95535e.jpg
+- lead: Skewed
+  src: assets/images/202401/_D858856.jpg
+- lead: Criss-Cross
+  src: assets/images/202401/_D858827.jpg
+- lead: Column
+  src: assets/images/202401/_D858626e.jpg
+- lead: The Walk
+  src: assets/images/202312/_NZ90062.jpg
+- lead: Beam
+  src: assets/images/202312/_D854823.jpg
 
-- title: City & Architecture
-  bg_image: assets/backgrounds/city.webp
-  items:
-    - lead: Facade
-      src: assets/images/202402/_NZ95467.jpg
-    - lead: No title
-      src: assets/images/202401/_D858997.jpg
-    - lead: Chinese Garden
-      src: assets/images/202401/_D858974e.jpg
-    - lead: Girders
-      src: assets/images/202401/_D858823.jpg
-    - lead: Obscured
-      src: assets/images/202401/_D858822.jpg
-    - lead: Steps to the Sky
-      src: assets/images/202401/_NZ95078.jpg
-    - lead: Blue Hole
-      src: assets/images/202401/_NZ95060e.jpg
-    - lead: Skyward
-      src: assets/images/202401/_NZ95031.jpg
-    - lead: Mirror Mirror
-      src: assets/images/202401/_NZ94959e.jpg
-    - lead: Turquoise Windows
-      src: assets/images/202401/_NZ94955.jpg
-    - lead: Circles of Light
-      src: assets/images/202401/_NZ94703e.jpg
-    - lead: Big Brother
-      src: assets/images/202401/_D858583.jpg
-    - lead: Imposing
-      src: assets/images/202401/_NZ94584.jpg
-    - lead: Tall and Small
-      src: assets/images/202312/_D857611e.jpg
-    - lead: Reflection
-      src: assets/images/202312/_D857580.jpg
-    - lead: Inclusion
-      src: assets/images/202312/_NZ93040e.jpg
-    - lead: Symmetry
-      src: assets/images/202312/_NZ93033e.jpg
-    - lead: Look Up
-      src: assets/images/202310/_NZ97234.jpg
-  
-- title: Street
-  bg_image: assets/backgrounds/street.webp
-  items:
-    - lead: Early Morning
-      src: assets/images/202402/_NZ95356.jpg
-    - lead: Discussion
-      src: assets/images/202401/_D858949.jpg
-    - lead: Enjoying
-      src: assets/images/202401/_D858891.jpg
-    - lead: Descending
-      src: assets/images/202401/_NZ94825e.jpg
-    - lead: Semi Arcs
-      src: assets/images/202401/_NZ94615e.jpg
-    - lead: Key hole
-      src: assets/images/202312/_NZ90049.jpg
-    - lead: Lamp Post
-      src: assets/images/202312/_NZ93247.jpg
 
-- title: Landscape
-  bg_image: assets/backgrounds/landscape.webp
-  items:
-    - lead: Gathering
-      src: assets/images/202402/_NZ95419.jpg
-    - lead: Walk into the Unknown
-      src: assets/images/202401/_NZ95175.jpg
-    - lead: Rising Mist
-      src: assets/images/202401/_D858657e.jpg
-    - lead: Curves
-      src: assets/images/202401/_D858785e.jpg
-    - lead: Simply Winter
-      src: assets/images/202312/_NZ91196e.jpg
-    - lead: Soft Sunrise
-      src: assets/images/202312/_NZ91091e.jpg
-    - lead: Two of a Kind
-      src: assets/images/202311/_NZ97454.jpg
-    - lead: Alps
-      src: assets/images/202309/_NZ94858e.jpg
-    - lead: Alpine Lake
-      src: assets/images/202309/_NZ94726e.jpg
-    - lead: Alpine Lake
-      src: assets/images/202309/_NZ94774-HDR.jpg
-
-- title: Close Up
-  bg_image: assets/backgrounds/closeup.webp
-  items:
-    - lead: Frozen Fragility
-      src: assets/images/202401/_NZ95191.jpg
-    - lead: Autumn Drop
-      src: assets/images/202311/_NZ90672.jpg
-    - lead: Beads
-      src: assets/images/202310/_NZ94614s.jpg
-    - lead: Fragile Eyes
-      src: assets/images/202307/_DSC4860e.jpg
-    - lead: Impaired Vision
-      src: assets/images/202304/_DSC5267ee.jpg
-    - lead: Frost
-      src: assets/images/202302/_DSC9177.jpg
-
-- title: Wildlife
-  bg_image: assets/backgrounds/wildlife.webp
-  items:
-    - lead: Flip
-      src: assets/images/202312/_NZ94264e.jpg
-    - lead: Pierced
-      src: assets/images/202312/_NZ94248e.jpg
-    - lead: Brawl
-      src: assets/images/202312/_NZ92314.jpg
-    - lead: Dreamy Lemmur
-      src: assets/images/202308/_DSC2609ee.jpg
-    - lead: Cuddling
-      src: assets/images/202307/_DSC9484ee.jpg
-
-- title: Artistic
-  bg_image: assets/backgrounds/artistic.webp
-  items:
-    - lead: Sun
-      src: assets/images/202402/_NZ95535e.jpg
-    - lead: Contrast
-      src: assets/images/202401/_D858861.jpg
-    - lead: Skewed
-      src: assets/images/202401/_D858856.jpg
-    - lead: Criss-Cross
-      src: assets/images/202401/_D858827.jpg
-    - lead: Bed in Space
-      src: assets/images/202401/_NZ94666ee.jpg
-    - lead: Column
-      src: assets/images/202401/_D858626e.jpg
-    - lead: Scarry
-      src: assets/images/202401/_NZ94637.jpg
-    - lead: Cubes
-      src: assets/images/202401/_NZ94632.jpg
-    - lead: The Walk
-      src: assets/images/202312/_NZ90062.jpg
-    - lead: Yellow
-      src: assets/images/202312/_D857588e.jpg
-    - lead: Beam
-      src: assets/images/202312/_D854823.jpg
-    - lead: Serious
-      src: assets/images/202312/_D857602.jpg
-    - lead: Shadow
-      src: assets/images/202309/_D857861e.jpg

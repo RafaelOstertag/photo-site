@@ -20,14 +20,23 @@ description: |
     </div>
 
     <div style="z-index: 1;" class="position-absolute bottom-0 start-50 text-light translate-middle-y">
-        <a href="#photo-start" class="smooth link-light link-underline link-underline-opacity-0" alt="Jump to content"><i class="bi bi-arrow-down-circle-fill display-5"></i></a>
+        <a href="#photo-start" class="smooth link-light link-underline link-underline-opacity-0"
+            alt="Jump to content"><i class="bi bi-arrow-down-circle-fill display-5"></i></a>
     </div>
 </div>
 
-{% for category in site.data.home_items %}
+<div class="mt-5 mb-4 container-fluid homeGallery">
+    {% for item in site.data.home_items %}
+    {% assign components = item.src | split: "/" %}
+    {% assign filename = components | last %}
+    {% assign path = item.src | replace_first: filename, "thumbnails" %}
+    {% assign thumbnail = path | append: "/" | append: filename | replace_first: ".jpg", ".webp" %}
 
-{%- if forloop.index == 3 -%}
-<div class="text-light lead-img"
+    <a href="{% link {{item.src}} %}"><img class="rounded" alt="{{item.lead}}" src="{% link {{thumbnail}} %}" /></a>
+    {% endfor %}
+</div>
+
+<section class="text-light lead-img"
     style='background: linear-gradient(rgba(0, 0, 0, 0.2),rgba(0, 0, 0, 0.2)),url("{% link assets/backgrounds/monthly.webp %}");'>
     <h2 class="display-4">Monthly</h2>
     <p class="fs-2 pt-3 ps-5">
@@ -36,44 +45,9 @@ description: |
             monthly galleries <span class="carousel-control-next-icon"></span>
         </a>
     </p>
-</div>
-{%- endif -%}
-
-{%- comment -%} {%- if forloop.index == 6 -%}
-<div class="text-light lead-img"
-    style='background: linear-gradient(rgba(0, 0, 0, 0.2),rgba(0, 0, 0, 0.2)),url("{% link assets/backgrounds/blackwhite.webp %}");'>
-    <h2 class="display-4">Black & White</h2>
-    <p class="fs-2 pt-3 ps-5">
-        <a class="link-light link-underline link-underline-opacity-0 link-offset-3 link-underline-light"
-            href="{% link black_and_white.md %}">Visit the
-            black & white gallery <span class="carousel-control-next-icon"></span>
-        </a>
-    </p>
-</div>
-{%- endif -%}
-{%- endcomment -%}
-<section class="ms-4 mt-5 mb-4"
-{%- if forloop.index == 1 -%}
-    id="photo-start"
-{%- endif -%}
->
-    <h2 class="display-5">
-        {{category.title}}
-    </h2>
-    <div class="container homeGallery">
-        {% for item in category.items %}
-        {% assign components = item.src | split: "/" %}
-        {% assign filename = components | last %}
-        {% assign path = item.src | replace_first: filename, "thumbnails" %}
-        {% assign thumbnail = path | append: "/" | append: filename | replace_first: ".jpg", ".webp" %}
-
-        <a href="{% link {{item.src}} %}"><img class="rounded" alt="{{item.lead}}" src="{% link {{thumbnail}} %}" /></a>
-        {% endfor %}
-    </div>
 </section>
-{% endfor %}
 
-<div class="container-fluid pt-5 pb-5 ps-5 pe-5 bg-dark text-light mt-5">
+<div class="container-fluid pt-5 pb-5 ps-5 pe-5 bg-dark text-light">
     <div class="row align-items-end">
         <div class="col-md-6">
             <ul class="list-unstyled mb-0 pb-0">
