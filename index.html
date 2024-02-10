@@ -25,16 +25,22 @@ description: |
     </div>
 </div>
 
-<div class="mt-5 mb-4 container-fluid homeGallery" id="photo-start">
-    {% for item in site.data.home_items %}
-    {% assign components = item.src | split: "/" %}
-    {% assign filename = components | last %}
-    {% assign path = item.src | replace_first: filename, "thumbnails" %}
-    {% assign thumbnail = path | append: "/" | append: filename | replace_first: ".jpg", ".webp" %}
+<section class="mt-5 mb-4 container">
+    <div class="row justify-content-center">
+        <div class="col col-md-12"  >
+            <div class="homeGallery" id="photo-start">
+                {% for item in site.data.home_items %}
+                {% assign components = item.src | split: "/" %}
+                {% assign filename = components | last %}
+                {% assign path = item.src | replace_first: filename, "thumbnails" %}
+                {% assign thumbnail = path | append: "/" | append: filename | replace_first: ".jpg", ".webp" %}
 
-    <a href="{% link {{item.src}} %}"><img class="rounded" alt="{{item.lead}}" src="{% link {{thumbnail}} %}" /></a>
-    {% endfor %}
-</div>
+                <a href="{% link {{item.src}} %}"><img class="rounded" alt="{{item.lead}}" src="{% link {{thumbnail}} %}" /></a>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</section>
 
 <section class="text-light lead-img"
     style='background: linear-gradient(rgba(0, 0, 0, 0.2),rgba(0, 0, 0, 0.2)),url("{% link assets/backgrounds/monthly.webp %}");'>
