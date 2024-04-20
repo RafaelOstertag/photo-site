@@ -1,3 +1,9 @@
+- lead: Contrast
+  src: assets/images/202404/_NZ94741.jpg
+- lead: Steam Horse
+  src: assets/images/202404/_NZ95109.jpg
+- lead: Man and Machine
+  src: assets/images/202404/_NZ94938.jpg
 - lead: Nesting
   src: assets/images/202404/_NZ93511ee.jpg
 - lead: Rotation
@@ -12,10 +18,6 @@
   src: assets/images/202403/_NZ99962.jpg
 - lead: Scrapper
   src: assets/images/202403/_NZ99935e.jpg
-- lead: Dandelion Meadow
-  src: assets/images/202403/_NZ99934.jpg
-- lead: Macro World
-  src: assets/images/202403/_NZ99033s.jpg
 - lead: Yellow Flower
   src: assets/images/202403/_NZ98905s.jpg
 - lead: Spring
@@ -28,24 +30,14 @@
   src: assets/images/202403/_D859477.jpg
 - lead: Blocky
   src: assets/images/202403/_NZ97025.jpg
-- lead: Outline
-  src: assets/images/202403/_NZ96945.jpg
 - lead: Bridging the Divide
   src: assets/images/202403/_NZ96941.jpg
 - lead: Busy Place
   src: assets/images/202403/_NZ96908.jpg
 - lead: Bow
   src: assets/images/202403/_NZ96805.jpg
-- lead: Sunshine
-  src: assets/images/202403/_NZ96778.jpg
-- lead: Early Bloomers
-  src: assets/images/202403/_NZ96737.jpg
 - lead: Dramatic
   src: assets/images/202403/_NZ96735.jpg
-- lead: Courting
-  src: assets/images/202403/_NZ95257.jpg
-- lead: Spread Wings
-  src: assets/images/202403/_NZ94918.jpg
 - lead: Daisies
   src: assets/images/202403/_NZ94882.jpg
 - lead: Red Flower
@@ -54,8 +46,6 @@
   src: assets/images/202403/_D859415e.jpg
 - lead: Spring
   src: assets/images/202403/_D859395.jpg
-- lead: Flying
-  src: assets/images/202403/_NZ94318.jpg
 - lead: "36"
   src: assets/images/202403/_NZ94751.jpg
 - lead: Feathers
@@ -66,20 +56,14 @@
   src: assets/images/202402/_NZ91938e.jpg
 - lead: Sunday Stroll
   src: assets/images/202402/_D859165.jpg
-- lead: Flashback
-  src: assets/images/202402/_D859146.jpg
 - lead: Sunday Tranquility
   src: assets/images/202402/_D859136.jpg
 - lead: Framed
   src: assets/images/202402/_D859065.jpg
 - lead: Scenic
   src: assets/images/202402/_D859059.jpg
-- lead: Strong Shadow
-  src: assets/images/202402/_D859019.jpg
 - lead: Little World
   src: assets/images/202402/_NZ90374s.jpg
-- lead: Morning
-  src: assets/images/202402/_NZ90027-HDR.jpg
 - lead: Snowdrop
   src: assets/images/202402/_NZ99731s.jpg
 - lead: Bare
@@ -90,12 +74,8 @@
   src: assets/images/202402/_NZ96213e.jpg
 - lead: Backlit Mountain Range
   src: assets/images/202402/_NZ95909.jpg
-- lead: Imposing
-  src: assets/images/202402/_NZ95873.jpg
 - lead: Another Sunrise
   src: assets/images/202402/_NZ95821.jpg
-- lead: Panorama
-  src: assets/images/202402/_NZ95808.jpg
 - lead: What it Used to be
   src: assets/images/202402/_NZ95801.jpg
 - lead: Fragility
@@ -106,8 +86,6 @@
   src: assets/images/202402/_NZ95697.jpg
 - lead: Tranquility
   src: assets/images/202402/_NZ95651e.jpg
-- lead: Spot lit
-  src: assets/images/202402/_NZ95612.jpg
 - lead: Distorting Reflection
   src: assets/images/202402/_NZ95436.jpg
 - lead: Sunlit
@@ -120,38 +98,22 @@
   src: assets/images/202402/_NZ95270.jpg
 - lead: Mystic Dwelling
   src: assets/images/202401/_NZ95169.jpg
-- lead: Delicate
-  src: assets/images/202401/_D858907.jpg
 - lead: Lined Up
   src: assets/images/202401/_D858795e.jpg
 - lead: Dirty Old
   src: assets/images/202401/_NZ95075e.jpg
-- lead: Alti Liebi
-  src: assets/images/202401/_NZ94988e.jpg
 - lead: Strength
   src: assets/images/202401/_NZ94905e.jpg
-- lead: Lurking
-  src: assets/images/202401/_NZ94813e.jpg
 - lead: Simplef
   src: assets/images/202312/_NZ92999.jpg
 - lead: Ducklings
   src: assets/images/202312/_NZ90040e.jpg
-- lead: Cozy Outside
-  src: assets/images/202312/_NZ90043e.jpg
-- lead: No Pictures
-  src: assets/images/202312/_D857409.jpg
-- lead: Reaching
-  src: assets/images/202312/_NZ93087.jpg
-- lead: Obscured
-  src: assets/images/202401/_D858822.jpg
 - lead: Steps to the Sky
   src: assets/images/202401/_NZ95078.jpg
 - lead: Blue Hole
   src: assets/images/202401/_NZ95060e.jpg
 - lead: Skyward
   src: assets/images/202401/_NZ95031.jpg
-- lead: Mirror Mirror
-  src: assets/images/202401/_NZ94959e.jpg
 - lead: Big Brother
   src: assets/images/202401/_D858583.jpg
 - lead: Tall and Small
