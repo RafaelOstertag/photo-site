@@ -1,3 +1,11 @@
+- lead: Fountain
+  src: assets/images/202405/_NZ97718.jpg
+- lead: Fly By
+  src: assets/images/202405/_NZ97591.jpg
+- lead: Bucket of Sand
+  src: assets/images/202405/_NZ97563.jpg
+- lead: Sunrise II
+  src: assets/images/202405/_NZ97537.jpg
 - lead: Towers
   src: assets/images/202405/_NZ97411.jpg
 - lead: Huff
@@ -8,8 +16,6 @@
   src: assets/images/202405/_D850458.jpg
 - lead: Descend
   src: assets/images/202405/_NZ96327.jpg
-- lead: Wall
-  src: assets/images/202404/_D859856.jpg
 - lead: Moored
   src: assets/images/202404/_D859695.jpg
 - lead: Contrast
@@ -18,10 +24,6 @@
   src: assets/images/202404/_NZ95109.jpg
 - lead: Man and Machine
   src: assets/images/202404/_NZ94938.jpg
-- lead: Nesting
-  src: assets/images/202404/_NZ93511ee.jpg
-- lead: Rotation
-  src: assets/images/202404/_NZ92488.jpg
 - lead: Almost Touching
   src: assets/images/202404/_NZ92295e.jpg
 - lead: Floral Site
@@ -32,14 +34,8 @@
   src: assets/images/202403/_NZ99962.jpg
 - lead: Scrapper
   src: assets/images/202403/_NZ99935e.jpg
-- lead: Yellow Flower
-  src: assets/images/202403/_NZ98905s.jpg
 - lead: Spring
   src: assets/images/202403/_NZ98350s.jpg
-- lead: No title
-  src: assets/images/202403/_D859550.jpg
-- lead: No title
-  src: assets/images/202403/_D859524.jpg
 - lead: Boats
   src: assets/images/202403/_D859477.jpg
 - lead: Blocky
@@ -54,12 +50,8 @@
   src: assets/images/202403/_NZ96735.jpg
 - lead: Daisies
   src: assets/images/202403/_NZ94882.jpg
-- lead: Red Flower
-  src: assets/images/202403/_NZ94809e.jpg
 - lead: Doorway
   src: assets/images/202403/_D859415e.jpg
-- lead: Spring
-  src: assets/images/202403/_D859395.jpg
 - lead: "36"
   src: assets/images/202403/_NZ94751.jpg
 - lead: Feathers
@@ -70,12 +62,6 @@
   src: assets/images/202402/_NZ91938e.jpg
 - lead: Sunday Stroll
   src: assets/images/202402/_D859165.jpg
-- lead: Sunday Tranquility
-  src: assets/images/202402/_D859136.jpg
-- lead: Framed
-  src: assets/images/202402/_D859065.jpg
-- lead: Scenic
-  src: assets/images/202402/_D859059.jpg
 - lead: Little World
   src: assets/images/202402/_NZ90374s.jpg
 - lead: Snowdrop
@@ -84,16 +70,8 @@
   src: assets/images/202402/_NZ97519.jpg
 - lead: Big Black Eye
   src: assets/images/202402/_NZ96359e.jpg
-- lead: Grazing with Ease
-  src: assets/images/202402/_NZ96213e.jpg
 - lead: Backlit Mountain Range
   src: assets/images/202402/_NZ95909.jpg
-- lead: Another Sunrise
-  src: assets/images/202402/_NZ95821.jpg
-- lead: What it Used to be
-  src: assets/images/202402/_NZ95801.jpg
-- lead: Fragility
-  src: assets/images/202402/_NZ95706e.jpg
 - lead: Standing Out
   src: assets/images/202402/_NZ95701.jpg
 - lead: Standing Strong
@@ -104,20 +82,12 @@
   src: assets/images/202402/_NZ95436.jpg
 - lead: Sunlit
   src: assets/images/202402/_NZ95381.jpg
-- lead: Soft Light
-  src: assets/images/202402/_NZ95373.jpg
-- lead: Sunrise
-  src: assets/images/202402/_NZ95288.jpg
-- lead: Misty Sunrise
-  src: assets/images/202402/_NZ95270.jpg
 - lead: Mystic Dwelling
   src: assets/images/202401/_NZ95169.jpg
 - lead: Lined Up
   src: assets/images/202401/_D858795e.jpg
 - lead: Dirty Old
   src: assets/images/202401/_NZ95075e.jpg
-- lead: Strength
-  src: assets/images/202401/_NZ94905e.jpg
 - lead: Simplef
   src: assets/images/202312/_NZ92999.jpg
 - lead: Ducklings
@@ -126,18 +96,10 @@
   src: assets/images/202401/_NZ95078.jpg
 - lead: Blue Hole
   src: assets/images/202401/_NZ95060e.jpg
-- lead: Skyward
-  src: assets/images/202401/_NZ95031.jpg
-- lead: Big Brother
-  src: assets/images/202401/_D858583.jpg
 - lead: Tall and Small
   src: assets/images/202312/_D857611e.jpg
 - lead: Reflection
   src: assets/images/202312/_D857580.jpg
-- lead: Inclusion
-  src: assets/images/202312/_NZ93040e.jpg
-- lead: Symmetry
-  src: assets/images/202312/_NZ93033e.jpg
 - lead: Look Up
   src: assets/images/202310/_NZ97234.jpg
 - lead: Early Morning
