@@ -1,5 +1,14 @@
 body {
     background-color: rgb(255, 255, 250);
+    font-family: bryant-web-condensed, sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+h1 {
+    font-family: bryant-web, sans-serif;
+    font-weight: 300;
+    font-style: normal;
 }
 
 .lead-img {

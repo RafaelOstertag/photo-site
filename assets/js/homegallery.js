@@ -1,10 +1,10 @@
 jQuery(".homeGallery")
     .justifiedGallery({
         captions: true,
-        maxRowHeight: 200,
+        //maxRowHeight: 200,
         lastRow: "center",
-        rowHeight: 150,
-        margins: 10
+        rowHeight: 250,
+        margins: 40
     })
     .on("jg.complete", function (evt) {
         window.lightGallery(
