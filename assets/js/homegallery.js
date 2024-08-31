@@ -4,7 +4,7 @@ jQuery(".homeGallery")
         //maxRowHeight: 200,
         lastRow: "center",
         rowHeight: 250,
-        margins: 40
+        margins: 15
     })
     .on("jg.complete", function (evt) {
         window.lightGallery(
