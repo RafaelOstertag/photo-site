@@ -3,8 +3,8 @@ jQuery(".homeGallery")
         captions: true,
         //maxRowHeight: 200,
         lastRow: "center",
-        rowHeight: 250,
-        margins: 15
+        rowHeight: 150,
+        margins: 5
     })
     .on("jg.complete", function (evt) {
         window.lightGallery(

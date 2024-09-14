@@ -21,6 +21,5 @@ assets/images/*/thumbnails
 _data/*.yml
 !_data/favorites.yml
 !_data/home_items.yml
-monthly/*
-!monthly/.gitkeep
+!_data/.gitkeep
 robots.txt

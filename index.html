@@ -18,28 +18,12 @@ description: |
     <div class="row justify-content-center">
         <div class="col col-md-12"  >
             <div class="homeGallery" id="photo-start">
-                {% for item in site.data.home_items %}
-                {% assign components = item.src | split: "/" %}
-                {% assign filename = components | last %}
-                {% assign path = item.src | replace_first: filename, "thumbnails" %}
-                {% assign thumbnail = path | append: "/" | append: filename | replace_first: ".jpg", ".webp" %}
-
-                <a href="{% link {{item.src}} %}"><img class="rounded" alt="{{item.lead}}" src="{% link {{thumbnail}} %}" /></a>
+                {% for item in site.data.gallery %}
+                <a href="{% link {{item.image}} %}"><img class="rounded" alt="{{item.lead}}" src="{% link {{item.thumb}} %}" /></a>
                 {% endfor %}
             </div>
         </div>
     </div>
-</section>
-
-<section class="text-light lead-img"
-    style='background: linear-gradient(rgba(0, 0, 0, 0.2),rgba(0, 0, 0, 0.2)),url("{% link assets/backgrounds/monthly.webp %}");'>
-    <h2 class="display-4">Monthly</h2>
-    <p class="fs-2 pt-3 ps-5">
-        <a class="link-light link-underline link-underline-opacity-0 link-offset-3 link-underline-light"
-            href="{% link monthly/index.md %}">Visit the
-            monthly galleries <span class="carousel-control-next-icon"></span>
-        </a>
-    </p>
 </section>
 
 <div class="container-fluid pt-5 pb-5 ps-5 pe-5 bg-dark text-light">

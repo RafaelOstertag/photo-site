@@ -9,7 +9,6 @@ import logging
 import sys
 
 import photosite.serial
-import yaml
 
 logging.basicConfig(format="%(asctime)s %(levelname)s %(message)s", level=logging.INFO)
 
